@@ -1,0 +1,1419 @@
+{
+  "args": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "epochs": 150,
+    "lr": 0.001,
+    "wd": 0.05,
+    "batch_size": 128,
+    "arms": "Fix2_Normalized,Fix2_FixedDenom,EvenPow_RowSum,EvenPow_FixedDenom",
+    "teacher_seed": 42,
+    "teacher_ckpt_dir": "./checkpoints_bloodmnist",
+    "ckpt_dir": "./checkpoints_fix5",
+    "results_dir": "./experiment_results",
+    "data_root": "./data",
+    "num_workers": 2,
+    "skip_train": false,
+    "selftest": false
+  },
+  "results": {
+    "Fix2_Normalized": [
+      {
+        "arm": "Fix2_Normalized",
+        "seed": 42,
+        "test_acc": 0.9488453668517978,
+        "test_bal_acc": 0.946139923029655,
+        "best_val_acc": 0.9585280373831776,
+        "best_val_bal": 0.9582322941705634,
+        "best_epoch": 123,
+        "total_epochs": 150,
+        "time_seconds": 1245.5867063999176,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999961256980896,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999961256980896,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 0.9999899864196777,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 1.0013580322265625e-05
+          },
+          "layer_3": {
+            "row_sum_mean": 0.9999299049377441,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 7.009506225585938e-05
+          },
+          "layer_4": {
+            "row_sum_mean": 0.9993589967489243,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0006410032510757446
+          },
+          "layer_5": {
+            "row_sum_mean": 0.9588441550731659,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.041155844926834106
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_Normalized_seed42.pt"
+      },
+      {
+        "arm": "Fix2_Normalized",
+        "seed": 43,
+        "test_acc": 0.9479684302835428,
+        "test_bal_acc": 0.946149199855144,
+        "best_val_acc": 0.9550233644859814,
+        "best_val_bal": 0.9549027702890602,
+        "best_epoch": 98,
+        "total_epochs": 150,
+        "time_seconds": 1221.4342954158783,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999990463256836,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995231628418,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999967813491821,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_3": {
+            "row_sum_mean": 0.9888922423124313,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.011107757687568665
+          },
+          "layer_4": {
+            "row_sum_mean": 0.9907351583242416,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.009264841675758362
+          },
+          "layer_5": {
+            "row_sum_mean": 0.9984274804592133,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0015725195407867432
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_Normalized_seed43.pt"
+      },
+      {
+        "arm": "Fix2_Normalized",
+        "seed": 44,
+        "test_acc": 0.9403683133586671,
+        "test_bal_acc": 0.9366842080851738,
+        "best_val_acc": 0.9497663551401869,
+        "best_val_bal": 0.9514022938846627,
+        "best_epoch": 105,
+        "total_epochs": 150,
+        "time_seconds": 1194.0535550117493,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 0.9999499320983887,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 5.0067901611328125e-05
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999996423721313,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 0.9998798221349716,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.00012017786502838135
+          },
+          "layer_3": {
+            "row_sum_mean": 0.9999799728393555,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 2.002716064453125e-05
+          },
+          "layer_4": {
+            "row_sum_mean": 0.9574219137430191,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.042578086256980896
+          },
+          "layer_5": {
+            "row_sum_mean": 0.9999399036169052,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 6.00963830947876e-05
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_Normalized_seed44.pt"
+      },
+      {
+        "arm": "Fix2_Normalized",
+        "seed": 45,
+        "test_acc": 0.9500146156094709,
+        "test_bal_acc": 0.9451240405610078,
+        "best_val_acc": 0.959696261682243,
+        "best_val_bal": 0.9581438416857211,
+        "best_epoch": 122,
+        "total_epochs": 150,
+        "time_seconds": 1225.1564106941223,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999988079071045,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999992847442627,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 0.9999499320983887,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 5.0067901611328125e-05
+          },
+          "layer_3": {
+            "row_sum_mean": 0.9999599456787109,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 4.00543212890625e-05
+          },
+          "layer_4": {
+            "row_sum_mean": 0.9995693564414978,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.00043064355850219727
+          },
+          "layer_5": {
+            "row_sum_mean": 0.998697891831398,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0013021081686019897
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_Normalized_seed45.pt"
+      },
+      {
+        "arm": "Fix2_Normalized",
+        "seed": 46,
+        "test_acc": 0.9526454253142356,
+        "test_bal_acc": 0.9497826877728794,
+        "best_val_acc": 0.9561915887850467,
+        "best_val_bal": 0.9556720084756107,
+        "best_epoch": 131,
+        "total_epochs": 150,
+        "time_seconds": 1230.897352218628,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999992847442627,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 0.9995793700218201,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.00042062997817993164
+          },
+          "layer_2": {
+            "row_sum_mean": 0.9999799728393555,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 2.002716064453125e-05
+          },
+          "layer_3": {
+            "row_sum_mean": 0.9999699592590332,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 3.0040740966796875e-05
+          },
+          "layer_4": {
+            "row_sum_mean": 0.9999399185180664,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 6.008148193359375e-05
+          },
+          "layer_5": {
+            "row_sum_mean": 0.9994992315769196,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0005007684230804443
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_Normalized_seed46.pt"
+      }
+    ],
+    "Fix2_FixedDenom": [
+      {
+        "arm": "Fix2_FixedDenom",
+        "seed": 42,
+        "test_acc": 0.9318912598655364,
+        "test_bal_acc": 0.923750905157281,
+        "best_val_acc": 0.9439252336448598,
+        "best_val_bal": 0.943014900299064,
+        "best_epoch": 144,
+        "total_epochs": 150,
+        "time_seconds": 1217.8885653018951,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.930551439523697,
+            "row_sum_min": 0.0,
+            "row_sum_max": 12.84614372253418,
+            "deviation_from_simplex": 0.9305514395236969
+          },
+          "layer_1": {
+            "row_sum_mean": 12.055849552154541,
+            "row_sum_min": 0.0,
+            "row_sum_max": 151.673828125,
+            "deviation_from_simplex": 11.055849552154541
+          },
+          "layer_2": {
+            "row_sum_mean": 1.107306808233261,
+            "row_sum_min": 0.0,
+            "row_sum_max": 15.927762985229492,
+            "deviation_from_simplex": 0.10730680823326111
+          },
+          "layer_3": {
+            "row_sum_mean": 1.013883113861084,
+            "row_sum_min": 0.0,
+            "row_sum_max": 4.414249420166016,
+            "deviation_from_simplex": 0.013883113861083984
+          },
+          "layer_4": {
+            "row_sum_mean": 1.0102985203266144,
+            "row_sum_min": 0.0,
+            "row_sum_max": 8.373750686645508,
+            "deviation_from_simplex": 0.01029852032661438
+          },
+          "layer_5": {
+            "row_sum_mean": 0.835303470492363,
+            "row_sum_min": 0.0,
+            "row_sum_max": 8.916637420654297,
+            "deviation_from_simplex": 0.16469652950763702
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_FixedDenom_seed42.pt"
+      },
+      {
+        "arm": "Fix2_FixedDenom",
+        "seed": 43,
+        "test_acc": 0.9082139725226542,
+        "test_bal_acc": 0.8921637888425955,
+        "best_val_acc": 0.9176401869158879,
+        "best_val_bal": 0.911930768791358,
+        "best_epoch": 141,
+        "total_epochs": 150,
+        "time_seconds": 1202.7557451725006,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 35.13142013549805,
+            "row_sum_min": 0.0,
+            "row_sum_max": 512.4274291992188,
+            "deviation_from_simplex": 34.13142013549805
+          },
+          "layer_1": {
+            "row_sum_mean": 7.735426425933838,
+            "row_sum_min": 0.0,
+            "row_sum_max": 79.67280578613281,
+            "deviation_from_simplex": 6.735426425933838
+          },
+          "layer_2": {
+            "row_sum_mean": 8.913482189178467,
+            "row_sum_min": 0.0,
+            "row_sum_max": 114.88761901855469,
+            "deviation_from_simplex": 7.913482189178467
+          },
+          "layer_3": {
+            "row_sum_mean": 0.8831280767917633,
+            "row_sum_min": 0.0,
+            "row_sum_max": 7.23093318939209,
+            "deviation_from_simplex": 0.1168719232082367
+          },
+          "layer_4": {
+            "row_sum_mean": 4.038600146770477,
+            "row_sum_min": 0.0,
+            "row_sum_max": 62.407169342041016,
+            "deviation_from_simplex": 3.0386001467704773
+          },
+          "layer_5": {
+            "row_sum_mean": 3.779967486858368,
+            "row_sum_min": 0.0,
+            "row_sum_max": 263.1448974609375,
+            "deviation_from_simplex": 2.779967486858368
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_FixedDenom_seed43.pt"
+      },
+      {
+        "arm": "Fix2_FixedDenom",
+        "seed": 44,
+        "test_acc": 0.9427068108740134,
+        "test_bal_acc": 0.9376237868606112,
+        "best_val_acc": 0.9550233644859814,
+        "best_val_bal": 0.9536032596437258,
+        "best_epoch": 140,
+        "total_epochs": 150,
+        "time_seconds": 902.4197423458099,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 0.17381543666124344,
+            "row_sum_min": 0.0,
+            "row_sum_max": 0.6580110192298889,
+            "deviation_from_simplex": 0.8261845633387566
+          },
+          "layer_1": {
+            "row_sum_mean": 41.95991516113281,
+            "row_sum_min": 0.37875598669052124,
+            "row_sum_max": 477.8660583496094,
+            "deviation_from_simplex": 40.95991516113281
+          },
+          "layer_2": {
+            "row_sum_mean": 0.23758990317583084,
+            "row_sum_min": 0.0,
+            "row_sum_max": 3.5642223358154297,
+            "deviation_from_simplex": 0.7624100968241692
+          },
+          "layer_3": {
+            "row_sum_mean": 1.0546188950538635,
+            "row_sum_min": 0.0,
+            "row_sum_max": 39.57207489013672,
+            "deviation_from_simplex": 0.054618895053863525
+          },
+          "layer_4": {
+            "row_sum_mean": 1.4195779860019684,
+            "row_sum_min": 0.0,
+            "row_sum_max": 29.369230270385742,
+            "deviation_from_simplex": 0.4195779860019684
+          },
+          "layer_5": {
+            "row_sum_mean": 2.845339775085449,
+            "row_sum_min": 0.0,
+            "row_sum_max": 19.678796768188477,
+            "deviation_from_simplex": 1.8453397750854492
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_FixedDenom_seed44.pt"
+      },
+      {
+        "arm": "Fix2_FixedDenom",
+        "seed": 45,
+        "test_acc": 0.19467991815258695,
+        "test_bal_acc": 0.125,
+        "best_val_acc": 0.19450934579439252,
+        "best_val_bal": 0.125,
+        "best_epoch": 0,
+        "total_epochs": 150,
+        "time_seconds": 852.6742680072784,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.901555210351944,
+            "row_sum_min": 0.036614250391721725,
+            "row_sum_max": 39.46562194824219,
+            "deviation_from_simplex": 0.901555210351944
+          },
+          "layer_1": {
+            "row_sum_mean": 0.3624637871980667,
+            "row_sum_min": 0.0,
+            "row_sum_max": 4.914699077606201,
+            "deviation_from_simplex": 0.6375362128019333
+          },
+          "layer_2": {
+            "row_sum_mean": 0.2650584802031517,
+            "row_sum_min": 0.2627829909324646,
+            "row_sum_max": 0.26618602871894836,
+            "deviation_from_simplex": 0.7349415197968483
+          },
+          "layer_3": {
+            "row_sum_mean": 0.26075979322195053,
+            "row_sum_min": 0.25984126329421997,
+            "row_sum_max": 0.2614787220954895,
+            "deviation_from_simplex": 0.7392402067780495
+          },
+          "layer_4": {
+            "row_sum_mean": 0.2612805739045143,
+            "row_sum_min": 0.26045289635658264,
+            "row_sum_max": 0.26230335235595703,
+            "deviation_from_simplex": 0.7387194260954857
+          },
+          "layer_5": {
+            "row_sum_mean": 0.26459577679634094,
+            "row_sum_min": 0.263582319021225,
+            "row_sum_max": 0.26547279953956604,
+            "deviation_from_simplex": 0.7354042232036591
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_FixedDenom_seed45.pt"
+      },
+      {
+        "arm": "Fix2_FixedDenom",
+        "seed": 46,
+        "test_acc": 0.2052031569716457,
+        "test_bal_acc": 0.1327720207253886,
+        "best_val_acc": 0.20093457943925233,
+        "best_val_bal": 0.12974137931034482,
+        "best_epoch": 1,
+        "total_epochs": 150,
+        "time_seconds": 853.3904483318329,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.14865642786026,
+            "row_sum_min": 0.005720152519643307,
+            "row_sum_max": 16.20206069946289,
+            "deviation_from_simplex": 0.14865642786026
+          },
+          "layer_1": {
+            "row_sum_mean": 5.115549683570862,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1360.264404296875,
+            "deviation_from_simplex": 4.115549683570862
+          },
+          "layer_2": {
+            "row_sum_mean": 0.2670617327094078,
+            "row_sum_min": 0.18000099062919617,
+            "row_sum_max": 0.32079172134399414,
+            "deviation_from_simplex": 0.7329382672905922
+          },
+          "layer_3": {
+            "row_sum_mean": 0.2709693983197212,
+            "row_sum_min": 0.2653855085372925,
+            "row_sum_max": 0.28243106603622437,
+            "deviation_from_simplex": 0.7290306016802788
+          },
+          "layer_4": {
+            "row_sum_mean": 0.2713342532515526,
+            "row_sum_min": 0.262784868478775,
+            "row_sum_max": 0.27477285265922546,
+            "deviation_from_simplex": 0.7286657467484474
+          },
+          "layer_5": {
+            "row_sum_mean": 0.27303431928157806,
+            "row_sum_min": 0.2613844871520996,
+            "row_sum_max": 0.2770642042160034,
+            "deviation_from_simplex": 0.7269656807184219
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/Fix2_FixedDenom_seed46.pt"
+      }
+    ],
+    "EvenPow_RowSum": [
+      {
+        "arm": "EvenPow_RowSum",
+        "seed": 42,
+        "test_acc": 0.9503069277988893,
+        "test_bal_acc": 0.9480610626398664,
+        "best_val_acc": 0.9614485981308412,
+        "best_val_bal": 0.9610371325127818,
+        "best_epoch": 99,
+        "total_epochs": 150,
+        "time_seconds": 853.7482349872589,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995827674866,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999997019767761,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999997019767761,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_3": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995231628418,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_4": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999992847442627,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_5": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999988079071045,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_RowSum_seed42.pt"
+      },
+      {
+        "arm": "EvenPow_RowSum",
+        "seed": 43,
+        "test_acc": 0.9532300496930722,
+        "test_bal_acc": 0.9532309792375641,
+        "best_val_acc": 0.9585280373831776,
+        "best_val_bal": 0.9575932292649068,
+        "best_epoch": 116,
+        "total_epochs": 150,
+        "time_seconds": 887.5280771255493,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995827674866,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995231628418,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995231628418,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_3": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999922513961792,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_4": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.999998927116394,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_5": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999984502792358,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_RowSum_seed43.pt"
+      },
+      {
+        "arm": "EvenPow_RowSum",
+        "seed": 44,
+        "test_acc": 0.9473838059047063,
+        "test_bal_acc": 0.941847083986773,
+        "best_val_acc": 0.9567757009345794,
+        "best_val_bal": 0.9549708516425293,
+        "best_epoch": 87,
+        "total_epochs": 150,
+        "time_seconds": 904.7332491874695,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999996423721313,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999997019767761,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999984502792358,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_3": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999978542327881,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_4": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999974966049194,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_5": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.999997615814209,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_RowSum_seed44.pt"
+      },
+      {
+        "arm": "EvenPow_RowSum",
+        "seed": 45,
+        "test_acc": 0.9459222449576147,
+        "test_bal_acc": 0.946091118739534,
+        "best_val_acc": 0.9620327102803738,
+        "best_val_bal": 0.9616274917393257,
+        "best_epoch": 95,
+        "total_epochs": 150,
+        "time_seconds": 872.714405298233,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995827674866,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995231628418,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995231628418,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_3": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999994039535522,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_4": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999983310699463,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_5": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999979734420776,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_RowSum_seed45.pt"
+      },
+      {
+        "arm": "EvenPow_RowSum",
+        "seed": 46,
+        "test_acc": 0.949137679041216,
+        "test_bal_acc": 0.9440354097683827,
+        "best_val_acc": 0.9637850467289719,
+        "best_val_bal": 0.9614154832373732,
+        "best_epoch": 124,
+        "total_epochs": 150,
+        "time_seconds": 863.535501241684,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999991655349731,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.999999463558197,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995231628418,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_3": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.999998927116394,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_4": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999988079071045,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_5": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999989867210388,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_RowSum_seed46.pt"
+      }
+    ],
+    "EvenPow_FixedDenom": [
+      {
+        "arm": "EvenPow_FixedDenom",
+        "seed": 42,
+        "test_acc": 0.8798596901490792,
+        "test_bal_acc": 0.8581125350503129,
+        "best_val_acc": 0.8907710280373832,
+        "best_val_bal": 0.8761476274786781,
+        "best_epoch": 135,
+        "total_epochs": 150,
+        "time_seconds": 856.6865909099579,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 52.78566837310791,
+            "row_sum_min": 0.021149467676877975,
+            "row_sum_max": 824.9241943359375,
+            "deviation_from_simplex": 51.78566837310791
+          },
+          "layer_1": {
+            "row_sum_mean": 0.5013781115412712,
+            "row_sum_min": 0.13485658168792725,
+            "row_sum_max": 113.37175750732422,
+            "deviation_from_simplex": 0.4986218884587288
+          },
+          "layer_2": {
+            "row_sum_mean": 0.15070092678070068,
+            "row_sum_min": 0.008685082197189331,
+            "row_sum_max": 24.79144287109375,
+            "deviation_from_simplex": 0.8492990732192993
+          },
+          "layer_3": {
+            "row_sum_mean": 0.7002355605363846,
+            "row_sum_min": 0.14958171546459198,
+            "row_sum_max": 114.341552734375,
+            "deviation_from_simplex": 0.2997644394636154
+          },
+          "layer_4": {
+            "row_sum_mean": 1.6052992939949036,
+            "row_sum_min": 0.0033842893317341805,
+            "row_sum_max": 152.87884521484375,
+            "deviation_from_simplex": 0.6052992939949036
+          },
+          "layer_5": {
+            "row_sum_mean": 1.309859573841095,
+            "row_sum_min": 0.003774560522288084,
+            "row_sum_max": 48.43386459350586,
+            "deviation_from_simplex": 0.30985957384109497
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_FixedDenom_seed42.pt"
+      },
+      {
+        "arm": "EvenPow_FixedDenom",
+        "seed": 43,
+        "test_acc": 0.8900906167787197,
+        "test_bal_acc": 0.8719803433376974,
+        "best_val_acc": 0.897196261682243,
+        "best_val_bal": 0.8852371317331768,
+        "best_epoch": 149,
+        "total_epochs": 150,
+        "time_seconds": 861.355138540268,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 59.68894958496094,
+            "row_sum_min": 0.016201183199882507,
+            "row_sum_max": 851.9928588867188,
+            "deviation_from_simplex": 58.68894958496094
+          },
+          "layer_1": {
+            "row_sum_mean": 1.4496992826461792,
+            "row_sum_min": 0.1181885227560997,
+            "row_sum_max": 54.132301330566406,
+            "deviation_from_simplex": 0.4496992826461792
+          },
+          "layer_2": {
+            "row_sum_mean": 0.15516355633735657,
+            "row_sum_min": 0.0033494257368147373,
+            "row_sum_max": 89.41007995605469,
+            "deviation_from_simplex": 0.8448364436626434
+          },
+          "layer_3": {
+            "row_sum_mean": 1.5976637303829193,
+            "row_sum_min": 0.08004032075405121,
+            "row_sum_max": 108.76637268066406,
+            "deviation_from_simplex": 0.5976637303829193
+          },
+          "layer_4": {
+            "row_sum_mean": 0.9157882034778595,
+            "row_sum_min": 0.00651552202180028,
+            "row_sum_max": 73.19624328613281,
+            "deviation_from_simplex": 0.0842117965221405
+          },
+          "layer_5": {
+            "row_sum_mean": 1.2071160674095154,
+            "row_sum_min": 0.05702277272939682,
+            "row_sum_max": 48.04876708984375,
+            "deviation_from_simplex": 0.20711606740951538
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_FixedDenom_seed43.pt"
+      },
+      {
+        "arm": "EvenPow_FixedDenom",
+        "seed": 44,
+        "test_acc": 0.9289681379713534,
+        "test_bal_acc": 0.9164572822889072,
+        "best_val_acc": 0.945677570093458,
+        "best_val_bal": 0.9411880745691994,
+        "best_epoch": 136,
+        "total_epochs": 150,
+        "time_seconds": 865.6746706962585,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 2.9753236770629883,
+            "row_sum_min": 0.047664910554885864,
+            "row_sum_max": 50.03327178955078,
+            "deviation_from_simplex": 1.9753236770629883
+          },
+          "layer_1": {
+            "row_sum_mean": 10.859130859375,
+            "row_sum_min": 0.0037078175228089094,
+            "row_sum_max": 75.7468032836914,
+            "deviation_from_simplex": 9.859130859375
+          },
+          "layer_2": {
+            "row_sum_mean": 0.11504429019987583,
+            "row_sum_min": 0.09060914069414139,
+            "row_sum_max": 0.15545465052127838,
+            "deviation_from_simplex": 0.8849557098001242
+          },
+          "layer_3": {
+            "row_sum_mean": 0.10808536224067211,
+            "row_sum_min": 0.050670407712459564,
+            "row_sum_max": 0.11581453680992126,
+            "deviation_from_simplex": 0.8919146377593279
+          },
+          "layer_4": {
+            "row_sum_mean": 0.45888155698776245,
+            "row_sum_min": 0.003220317419618368,
+            "row_sum_max": 8.667631149291992,
+            "deviation_from_simplex": 0.5411184430122375
+          },
+          "layer_5": {
+            "row_sum_mean": 0.6935590505599976,
+            "row_sum_min": 0.0032846261747181416,
+            "row_sum_max": 10.261127471923828,
+            "deviation_from_simplex": 0.30644094944000244
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_FixedDenom_seed44.pt"
+      },
+      {
+        "arm": "EvenPow_FixedDenom",
+        "seed": 45,
+        "test_acc": 0.9131832797427653,
+        "test_bal_acc": 0.9076110732051359,
+        "best_val_acc": 0.9188084112149533,
+        "best_val_bal": 0.9165927158915677,
+        "best_epoch": 141,
+        "total_epochs": 150,
+        "time_seconds": 856.1305584907532,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 0.1487368643283844,
+            "row_sum_min": 0.019665300846099854,
+            "row_sum_max": 1.004582166671753,
+            "deviation_from_simplex": 0.8512631356716156
+          },
+          "layer_1": {
+            "row_sum_mean": 48.12755584716797,
+            "row_sum_min": 0.037548597902059555,
+            "row_sum_max": 830.78955078125,
+            "deviation_from_simplex": 47.12755584716797
+          },
+          "layer_2": {
+            "row_sum_mean": 0.21656741946935654,
+            "row_sum_min": 0.010972948744893074,
+            "row_sum_max": 36.20931625366211,
+            "deviation_from_simplex": 0.7834325805306435
+          },
+          "layer_3": {
+            "row_sum_mean": 0.1162211112678051,
+            "row_sum_min": 0.0021238301414996386,
+            "row_sum_max": 16.528823852539062,
+            "deviation_from_simplex": 0.8837788887321949
+          },
+          "layer_4": {
+            "row_sum_mean": 0.13456368073821068,
+            "row_sum_min": 0.035958029329776764,
+            "row_sum_max": 0.7010287642478943,
+            "deviation_from_simplex": 0.8654363192617893
+          },
+          "layer_5": {
+            "row_sum_mean": 1.0855159014463425,
+            "row_sum_min": 0.0026675923727452755,
+            "row_sum_max": 89.21708679199219,
+            "deviation_from_simplex": 0.08551590144634247
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_FixedDenom_seed45.pt"
+      },
+      {
+        "arm": "EvenPow_FixedDenom",
+        "seed": 46,
+        "test_acc": 0.9231218941829874,
+        "test_bal_acc": 0.9142350683084377,
+        "best_val_acc": 0.9375,
+        "best_val_bal": 0.9323298414873867,
+        "best_epoch": 133,
+        "total_epochs": 150,
+        "time_seconds": 852.3638854026794,
+        "diverged": false,
+        "nonfinite_batches": 0,
+        "row_sum_stats": {
+          "layer_0": {
+            "row_sum_mean": 0.4534251168370247,
+            "row_sum_min": 0.017863843590021133,
+            "row_sum_max": 5.426787376403809,
+            "deviation_from_simplex": 0.5465748831629753
+          },
+          "layer_1": {
+            "row_sum_mean": 284.50738525390625,
+            "row_sum_min": 0.04577673226594925,
+            "row_sum_max": 6827.658203125,
+            "deviation_from_simplex": 283.50738525390625
+          },
+          "layer_2": {
+            "row_sum_mean": 0.1481531411409378,
+            "row_sum_min": 0.001555189723148942,
+            "row_sum_max": 18.582143783569336,
+            "deviation_from_simplex": 0.8518468588590622
+          },
+          "layer_3": {
+            "row_sum_mean": 0.703690268099308,
+            "row_sum_min": 0.00019112322479486465,
+            "row_sum_max": 353.49664306640625,
+            "deviation_from_simplex": 0.296309731900692
+          },
+          "layer_4": {
+            "row_sum_mean": 1.5685847699642181,
+            "row_sum_min": 0.009805971756577492,
+            "row_sum_max": 442.2496032714844,
+            "deviation_from_simplex": 0.5685847699642181
+          },
+          "layer_5": {
+            "row_sum_mean": 4.209806382656097,
+            "row_sum_min": 0.00289031770080328,
+            "row_sum_max": 434.3810729980469,
+            "deviation_from_simplex": 3.2098063826560974
+          }
+        },
+        "ckpt_path": "./checkpoints_fix5/EvenPow_FixedDenom_seed46.pt"
+      }
+    ]
+  },
+  "summary": {
+    "per_arm": {
+      "Fix2_Normalized": {
+        "test_acc_mean": 0.9479684302835428,
+        "test_acc_std": 0.004598694160348484,
+        "test_acc_seeds": [
+          0.9488453668517978,
+          0.9479684302835428,
+          0.9403683133586671,
+          0.9500146156094709,
+          0.9526454253142356
+        ],
+        "test_bal_acc_mean": 0.944776011860772,
+        "test_bal_acc_std": 0.004858269109269801,
+        "test_bal_acc_seeds": [
+          0.946139923029655,
+          0.946149199855144,
+          0.9366842080851738,
+          0.9451240405610078,
+          0.9497826877728794
+        ],
+        "n_diverged": 0,
+        "n_seeds": 5,
+        "row_sum_stats_last_seed": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999992847442627,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 0.9995793700218201,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.00042062997817993164
+          },
+          "layer_2": {
+            "row_sum_mean": 0.9999799728393555,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 2.002716064453125e-05
+          },
+          "layer_3": {
+            "row_sum_mean": 0.9999699592590332,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 3.0040740966796875e-05
+          },
+          "layer_4": {
+            "row_sum_mean": 0.9999399185180664,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 6.008148193359375e-05
+          },
+          "layer_5": {
+            "row_sum_mean": 0.9994992315769196,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0005007684230804443
+          }
+        }
+      },
+      "Fix2_FixedDenom": {
+        "test_acc_mean": 0.6365390236772874,
+        "test_acc_std": 0.39876968108491745,
+        "test_acc_seeds": [
+          0.9318912598655364,
+          0.9082139725226542,
+          0.9427068108740134,
+          0.19467991815258695,
+          0.2052031569716457
+        ],
+        "test_bal_acc_mean": 0.6022621003171753,
+        "test_bal_acc_std": 0.4324539133488477,
+        "test_bal_acc_seeds": [
+          0.923750905157281,
+          0.8921637888425955,
+          0.9376237868606112,
+          0.125,
+          0.1327720207253886
+        ],
+        "n_diverged": 0,
+        "n_seeds": 5,
+        "row_sum_stats_last_seed": {
+          "layer_0": {
+            "row_sum_mean": 1.14865642786026,
+            "row_sum_min": 0.005720152519643307,
+            "row_sum_max": 16.20206069946289,
+            "deviation_from_simplex": 0.14865642786026
+          },
+          "layer_1": {
+            "row_sum_mean": 5.115549683570862,
+            "row_sum_min": 0.0,
+            "row_sum_max": 1360.264404296875,
+            "deviation_from_simplex": 4.115549683570862
+          },
+          "layer_2": {
+            "row_sum_mean": 0.2670617327094078,
+            "row_sum_min": 0.18000099062919617,
+            "row_sum_max": 0.32079172134399414,
+            "deviation_from_simplex": 0.7329382672905922
+          },
+          "layer_3": {
+            "row_sum_mean": 0.2709693983197212,
+            "row_sum_min": 0.2653855085372925,
+            "row_sum_max": 0.28243106603622437,
+            "deviation_from_simplex": 0.7290306016802788
+          },
+          "layer_4": {
+            "row_sum_mean": 0.2713342532515526,
+            "row_sum_min": 0.262784868478775,
+            "row_sum_max": 0.27477285265922546,
+            "deviation_from_simplex": 0.7286657467484474
+          },
+          "layer_5": {
+            "row_sum_mean": 0.27303431928157806,
+            "row_sum_min": 0.2613844871520996,
+            "row_sum_max": 0.2770642042160034,
+            "deviation_from_simplex": 0.7269656807184219
+          }
+        }
+      },
+      "EvenPow_RowSum": {
+        "test_acc_mean": 0.9491961414790996,
+        "test_acc_std": 0.0028068059360790193,
+        "test_acc_seeds": [
+          0.9503069277988893,
+          0.9532300496930722,
+          0.9473838059047063,
+          0.9459222449576147,
+          0.949137679041216
+        ],
+        "test_bal_acc_mean": 0.946653130874424,
+        "test_bal_acc_std": 0.004345019247934463,
+        "test_bal_acc_seeds": [
+          0.9480610626398664,
+          0.9532309792375641,
+          0.941847083986773,
+          0.946091118739534,
+          0.9440354097683827
+        ],
+        "n_diverged": 0,
+        "n_seeds": 5,
+        "row_sum_stats_last_seed": {
+          "layer_0": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999991655349731,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_1": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.999999463558197,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_2": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999995231628418,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_3": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.999998927116394,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_4": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999988079071045,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          },
+          "layer_5": {
+            "row_sum_mean": 1.0,
+            "row_sum_min": 0.9999989867210388,
+            "row_sum_max": 1.000000238418579,
+            "deviation_from_simplex": 0.0
+          }
+        }
+      },
+      "EvenPow_FixedDenom": {
+        "test_acc_mean": 0.9070447237649809,
+        "test_acc_std": 0.021232411338596748,
+        "test_acc_seeds": [
+          0.8798596901490792,
+          0.8900906167787197,
+          0.9289681379713534,
+          0.9131832797427653,
+          0.9231218941829874
+        ],
+        "test_bal_acc_mean": 0.8936792604380983,
+        "test_bal_acc_std": 0.026792302447504565,
+        "test_bal_acc_seeds": [
+          0.8581125350503129,
+          0.8719803433376974,
+          0.9164572822889072,
+          0.9076110732051359,
+          0.9142350683084377
+        ],
+        "n_diverged": 0,
+        "n_seeds": 5,
+        "row_sum_stats_last_seed": {
+          "layer_0": {
+            "row_sum_mean": 0.4534251168370247,
+            "row_sum_min": 0.017863843590021133,
+            "row_sum_max": 5.426787376403809,
+            "deviation_from_simplex": 0.5465748831629753
+          },
+          "layer_1": {
+            "row_sum_mean": 284.50738525390625,
+            "row_sum_min": 0.04577673226594925,
+            "row_sum_max": 6827.658203125,
+            "deviation_from_simplex": 283.50738525390625
+          },
+          "layer_2": {
+            "row_sum_mean": 0.1481531411409378,
+            "row_sum_min": 0.001555189723148942,
+            "row_sum_max": 18.582143783569336,
+            "deviation_from_simplex": 0.8518468588590622
+          },
+          "layer_3": {
+            "row_sum_mean": 0.703690268099308,
+            "row_sum_min": 0.00019112322479486465,
+            "row_sum_max": 353.49664306640625,
+            "deviation_from_simplex": 0.296309731900692
+          },
+          "layer_4": {
+            "row_sum_mean": 1.5685847699642181,
+            "row_sum_min": 0.009805971756577492,
+            "row_sum_max": 442.2496032714844,
+            "deviation_from_simplex": 0.5685847699642181
+          },
+          "layer_5": {
+            "row_sum_mean": 4.209806382656097,
+            "row_sum_min": 0.00289031770080328,
+            "row_sum_max": 434.3810729980469,
+            "deviation_from_simplex": 3.2098063826560974
+          }
+        }
+      }
+    },
+    "tests": {
+      "Fix2_FixedDenom_vs_Fix2_Normalized": {
+        "acc_t": -1.7461985070141453,
+        "acc_p": 0.1556870664918464,
+        "acc_diff_pp": -31.14294066062554,
+        "bal_t": -1.7709079289068481,
+        "bal_p": 0.15126123133756797,
+        "bal_diff_pp": -34.251391154359666
+      },
+      "EvenPow_RowSum_vs_Fix2_Normalized": {
+        "acc_t": 0.5095496635088129,
+        "acc_p": 0.626914181254271,
+        "acc_diff_pp": 0.12277111955567577,
+        "bal_t": 0.6439831170444628,
+        "bal_p": 0.5378243180855736,
+        "bal_diff_pp": 0.1877119013652062
+      },
+      "EvenPow_FixedDenom_vs_Fix2_Normalized": {
+        "acc_t": -4.212169689728399,
+        "acc_p": 0.011209783903259413,
+        "acc_diff_pp": -4.092370651856192,
+        "bal_t": -4.1960740304697435,
+        "bal_p": 0.012010663541156853,
+        "bal_diff_pp": -5.109675142267367
+      }
+    },
+    "depth_accounting": {
+      "Fix2_Normalized": {
+        "poly_levels": 1,
+        "relu_levels": [
+          13,
+          14
+        ],
+        "division_levels": [
+          6,
+          10
+        ],
+        "attn_act_levels_per_block": [
+          20,
+          25
+        ],
+        "status": "estimated_from_literature_not_measured"
+      },
+      "Fix2_FixedDenom": {
+        "poly_levels": 1,
+        "relu_levels": [
+          13,
+          14
+        ],
+        "division_levels": 0,
+        "attn_act_levels_per_block": [
+          14,
+          15
+        ],
+        "status": "estimated_from_literature_not_measured"
+      },
+      "EvenPow_RowSum": {
+        "poly_levels": 1,
+        "relu_levels": 0,
+        "division_levels": [
+          6,
+          10
+        ],
+        "attn_act_levels_per_block": [
+          7,
+          11
+        ],
+        "status": "estimated_from_literature_not_measured"
+      },
+      "EvenPow_FixedDenom": {
+        "poly_levels": 1,
+        "relu_levels": 0,
+        "division_levels": 0,
+        "attn_act_levels_per_block": [
+          1,
+          1
+        ],
+        "status": "estimated_from_literature_not_measured"
+      }
+    }
+  },
+  "arm_notes": {
+    "Teacher": "LayerNorm + softmax + GELU. Not FHE-evaluable; accuracy anchor only.",
+    "Config_E": "Unbounded polynomial attention. Collapse control.",
+    "Fix2_Normalized": "Published Fix 2. Pays for BOTH comparison and division.",
+    "Fix2_FixedDenom": "Isolates the ReLU: keeps comparison, drops division.",
+    "EvenPow_RowSum": "Isolates the division: drops comparison, keeps sum-to-one.",
+    "EvenPow_FixedDenom": "Drops both. One multiplicative level. Cheapest arm possible."
+  },
+  "dataset": "BloodMNIST",
+  "num_classes": 8,
+  "img_size": 32,
+  "patch_size": 4,
+  "depth": 6,
+  "embed_dim": 192,
+  "num_heads": 3,
+  "n_tokens": 65,
+  "kd_T": 4.0,
+  "kd_alpha": 0.1,
+  "grad_clip": 5.0,
+  "teacher": "shared, seed 42, reused from fix2_bloodmnist runs",
+  "depth_disclaimer": "Level counts are literature estimates (minimax ReLU 13-14, Lee et al. TDSC 2022; Goldschmidt ~2 levels/iter x 3-5 iters), not measurements. Do not publish as measured."
+}

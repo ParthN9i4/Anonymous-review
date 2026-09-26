@@ -1,0 +1,110 @@
+{
+  "STATUS": "PARTIAL -- job still running or was killed before finishing",
+  "git_commit": "4b8847f-dirty",
+  "runs_completed": 10,
+  "args": {
+    "dataset": "cifar100",
+    "seeds": [
+      44
+    ],
+    "epochs": 100,
+    "batch_size": 128,
+    "results_dir": "./experiment_results",
+    "ckpt_dir": "./checkpoints_substitution",
+    "no_kd_arm": false
+  },
+  "dataset": "cifar100",
+  "teacher_per_seed": {
+    "44": {
+      "test_at_best_val": 43.98,
+      "test_final": 43.96,
+      "best_val": 43.92,
+      "best_epoch": 99
+    }
+  },
+  "with_kd_per_seed": {
+    "A: GELU only": {
+      "44": {
+        "test_at_best_val": 47.08,
+        "test_final": 47.26,
+        "best_val": 46.64,
+        "best_epoch": 89
+      }
+    },
+    "B: softmax only": {
+      "44": {
+        "test_at_best_val": 36.94,
+        "test_final": 37.06,
+        "best_val": 37.62,
+        "best_epoch": 52
+      }
+    },
+    "C: norm only": {
+      "44": {
+        "test_at_best_val": 44.85,
+        "test_final": 45.02,
+        "best_val": 45.86,
+        "best_epoch": 89
+      }
+    },
+    "D: GELU+softmax": {
+      "44": {
+        "test_at_best_val": 35.86,
+        "test_final": 35.61,
+        "best_val": 35.0,
+        "best_epoch": 41
+      }
+    },
+    "E: all three": {
+      "44": {
+        "test_at_best_val": 25.84,
+        "test_final": 25.46,
+        "best_val": 25.32,
+        "best_epoch": 98
+      }
+    },
+    "F: softmax+norm": {
+      "44": {
+        "test_at_best_val": 28.23,
+        "test_final": 14.93,
+        "best_val": 26.36,
+        "best_epoch": 93
+      }
+    },
+    "G: GELU+norm": {
+      "44": {
+        "test_at_best_val": 42.74,
+        "test_final": 42.87,
+        "best_val": 43.3,
+        "best_epoch": 99
+      }
+    },
+    "H: BPMaxsoftmax+norm": {
+      "44": {
+        "test_at_best_val": 31.84,
+        "test_final": 31.92,
+        "best_val": 31.6,
+        "best_epoch": 79
+      }
+    },
+    "I: BPMax all three": {
+      "44": {
+        "test_at_best_val": 31.47,
+        "test_final": 31.65,
+        "best_val": 30.3,
+        "best_epoch": 99
+      }
+    }
+  },
+  "no_kd_per_seed": {
+    "A: GELU only": {},
+    "B: softmax only": {},
+    "C: norm only": {},
+    "D: GELU+softmax": {},
+    "E: all three": {},
+    "F: softmax+norm": {},
+    "G: GELU+norm": {},
+    "H: BPMaxsoftmax+norm": {},
+    "I: BPMax all three": {}
+  }
+}

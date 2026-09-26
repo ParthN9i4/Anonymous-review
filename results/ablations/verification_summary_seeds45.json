@@ -1,0 +1,82 @@
+{
+  "Teacher": {
+    "description": "Standard DeiT-Tiny (baseline)",
+    "stats": {
+      "mean": 77.93,
+      "std": 0.0,
+      "min": 77.93,
+      "max": 77.93,
+      "n_seeds": 1
+    },
+    "per_seed_best": {
+      "45": 77.93
+    },
+    "per_seed_final": {
+      "45": 77.93
+    }
+  },
+  "Config_E": {
+    "description": "All-polynomial broken baseline (PolyGELU+PolyAttn+BatchNorm+KD)",
+    "stats": {
+      "mean": 33.56,
+      "std": 0.0,
+      "min": 33.56,
+      "max": 33.56,
+      "n_seeds": 1
+    },
+    "per_seed_best": {
+      "45": 33.56
+    },
+    "per_seed_final": {
+      "45": 28.4
+    }
+  },
+  "Fix1_Clamped": {
+    "description": "PolyGELU + PolyAttn(clamped to [0,1]) + BatchNorm + KD",
+    "stats": {
+      "mean": 70.92,
+      "std": 0.0,
+      "min": 70.92,
+      "max": 70.92,
+      "n_seeds": 1
+    },
+    "per_seed_best": {
+      "45": 70.92
+    },
+    "per_seed_final": {
+      "45": 71.3
+    }
+  },
+  "Fix2_Normalized": {
+    "description": "PolyGELU + PolyAttn(row-normalized) + BatchNorm + KD",
+    "stats": {
+      "mean": 79.92,
+      "std": 0.0,
+      "min": 79.92,
+      "max": 79.92,
+      "n_seeds": 1
+    },
+    "per_seed_best": {
+      "45": 79.92
+    },
+    "per_seed_final": {
+      "45": 79.69
+    }
+  },
+  "Fix3_RMSNorm": {
+    "description": "PolyGELU + PolyAttn + RMSNorm + KD",
+    "stats": {
+      "mean": 69.62,
+      "std": 0.0,
+      "min": 69.62,
+      "max": 69.62,
+      "n_seeds": 1
+    },
+    "per_seed_best": {
+      "45": 69.62
+    },
+    "per_seed_final": {
+      "45": 69.94
+    }
+  }
+}

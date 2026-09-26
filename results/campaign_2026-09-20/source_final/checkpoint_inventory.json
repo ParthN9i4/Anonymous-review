@@ -1,0 +1,164 @@
+[
+  {
+    "name": "regularized_ln_seed42",
+    "checkpoint": "/home/anonuser/pvit_results/baseline_campaigns/full_20260917T030115Z_HGryDe/baseline/regularized_ln_seed42/best.pth",
+    "kind": "baseline",
+    "arm": "regularized_ln",
+    "mask": null,
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/regularized_ln_seed42",
+    "checkpoint_sha256": "7de350e7d6205a89ee4c89b06679927753c9a74f362a931ec09ac99146ed9fdf"
+  },
+  {
+    "name": "regularized_ln_seed43",
+    "checkpoint": "/home/anonuser/pvit_results/baseline_campaigns/full_20260917T044738Z_lZq7Rm/baseline/regularized_ln_seed43/best.pth",
+    "kind": "baseline",
+    "arm": "regularized_ln",
+    "mask": null,
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/regularized_ln_seed43",
+    "checkpoint_sha256": "dcc53ad5ff25e0b6f9bf3217c64a5a019be98b5d95cc9e2a567c56644ee25ea8"
+  },
+  {
+    "name": "regularized_ln_seed44",
+    "checkpoint": "/home/anonuser/pvit_results/baseline_campaigns/full_20260917T044738Z_lZq7Rm/baseline/regularized_ln_seed44/best.pth",
+    "kind": "baseline",
+    "arm": "regularized_ln",
+    "mask": null,
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/regularized_ln_seed44",
+    "checkpoint_sha256": "ae86aef8752d850f19d65a5bd8d0adbdfa6a70dbfbf2c850df0afba59996d878"
+  },
+  {
+    "name": "legacy_B_seed42",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds42_B_seed42.pth",
+    "kind": "legacy",
+    "arm": "B",
+    "mask": "010",
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/legacy_B_seed42",
+    "checkpoint_sha256": "0c7743a7936415ba8e7b5ad5ad74f3ab6bb087aa387fdd3aee6a44daada26621"
+  },
+  {
+    "name": "legacy_E_seed42",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds42_E_seed42.pth",
+    "kind": "legacy",
+    "arm": "E",
+    "mask": "111",
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/legacy_E_seed42",
+    "checkpoint_sha256": "cb5706a40e2d4f8f0764cf42c0a34afc1fbaac7c9ca10f883cc386f24aaee458"
+  },
+  {
+    "name": "legacy_F_seed42",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds42_F_seed42.pth",
+    "kind": "legacy",
+    "arm": "F",
+    "mask": "011",
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/legacy_F_seed42",
+    "checkpoint_sha256": "cc908101f6f6ff55cb6d906537bcd9d92a02d07861ebd9526214b5241f56f97d"
+  },
+  {
+    "name": "legacy_B_seed43",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds43_B_seed43.pth",
+    "kind": "legacy",
+    "arm": "B",
+    "mask": "010",
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/legacy_B_seed43",
+    "checkpoint_sha256": "02f1d0136971f7fbbdafe1fe2bd5451de47edbcab9b058d6cfe16734955ae4fc"
+  },
+  {
+    "name": "legacy_E_seed43",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds43_E_seed43.pth",
+    "kind": "legacy",
+    "arm": "E",
+    "mask": "111",
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/legacy_E_seed43",
+    "checkpoint_sha256": "6aa25842f4bfbb9d143cb10ed4d734df544150950218427fd0525a7448665951"
+  },
+  {
+    "name": "legacy_F_seed43",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds43_F_seed43.pth",
+    "kind": "legacy",
+    "arm": "F",
+    "mask": "011",
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/legacy_F_seed43",
+    "checkpoint_sha256": "e1cf684e0767095a572b2c745a8e17af8f202c7b28189298fa6ea826dfce0eb4"
+  },
+  {
+    "name": "legacy_B_seed44",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_B_seed44.pth",
+    "kind": "legacy",
+    "arm": "B",
+    "mask": "010",
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/legacy_B_seed44",
+    "checkpoint_sha256": "8f6e9a159a4bd1d902d9890265085ce0c09d3a020f163142839946b74c149ac2"
+  },
+  {
+    "name": "legacy_E_seed44",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_E_seed44.pth",
+    "kind": "legacy",
+    "arm": "E",
+    "mask": "111",
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/legacy_E_seed44",
+    "checkpoint_sha256": "3b1ac7737f9fb161c2240122eb0678a6d2bbdeee777e161d82bb68897319351a"
+  },
+  {
+    "name": "legacy_F_seed44",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_F_seed44.pth",
+    "kind": "legacy",
+    "arm": "F",
+    "mask": "011",
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/legacy_F_seed44",
+    "checkpoint_sha256": "4e36c7bf6d19697a0691561b46013b1544cd7c083dc4371fa82a25a8ad22aa88"
+  },
+  {
+    "name": "power_P_seed42",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_P_seed42.pth",
+    "kind": "power",
+    "arm": "P",
+    "mask": null,
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/power_P_seed42",
+    "checkpoint_sha256": "0d3ca16b85026a8314054b227d66d92a5c6f040a3c4677c465f0fc96ec022ec2"
+  },
+  {
+    "name": "power_Q_seed42",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_Q_seed42.pth",
+    "kind": "power",
+    "arm": "Q",
+    "mask": null,
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/power_Q_seed42",
+    "checkpoint_sha256": "8cd7347882acc333ccd36c27cc52b7f8f35b0c1c999b12a28cf93eb0a22ac27a"
+  },
+  {
+    "name": "power_P_seed43",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_P_seed43.pth",
+    "kind": "power",
+    "arm": "P",
+    "mask": null,
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/power_P_seed43",
+    "checkpoint_sha256": "d6c5a1d89acd7ac2496c282e2bdd0a3adcc5b0183a43c0adf7308e67d697803c"
+  },
+  {
+    "name": "power_Q_seed43",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_Q_seed43.pth",
+    "kind": "power",
+    "arm": "Q",
+    "mask": null,
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/power_Q_seed43",
+    "checkpoint_sha256": "8e8e1189e0e56002668aa849d9a6e6f77e52bc3b17954c29486e2c3f446ebf4f"
+  },
+  {
+    "name": "power_P_seed44",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_P_seed44.pth",
+    "kind": "power",
+    "arm": "P",
+    "mask": null,
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/power_P_seed44",
+    "checkpoint_sha256": "c98674320e2febb15e7c9079e242d5e018dfea2ad642f92b8a7eb26c2e555407"
+  },
+  {
+    "name": "power_Q_seed44",
+    "checkpoint": "/home/anonuser/Private-ViT-FHE/checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_Q_seed44.pth",
+    "kind": "power",
+    "arm": "Q",
+    "mask": null,
+    "out": "/home/anonuser/pvit_results/metrics_closeout/full_hzzje36i/results/power_Q_seed44",
+    "checkpoint_sha256": "7f0f87be98a01e40dee997aa53eb4ddcd843c22c8754e0b8692335bc4ad185c3"
+  }
+]

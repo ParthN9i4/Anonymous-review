@@ -1,0 +1,121 @@
+{
+  "args": {
+    "mode": "accuracy",
+    "bits": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "dataset": "cifar10",
+    "epochs": 100,
+    "seed": 42,
+    "batch_size": 128,
+    "tolerance": 0.5,
+    "range_mode": "measured",
+    "range_margin": 0.05,
+    "range_pct": 0.999,
+    "calib_batches": 40,
+    "results_dir": "./experiment_results"
+  },
+  "mode": "accuracy",
+  "accuracy": {
+    "calibration": {
+      "mode": "measured",
+      "margin": 0.05,
+      "percentile": null,
+      "batches": 40,
+      "calibrated_on": "train split (never test -- model-owner data under the MLaaS threat model)",
+      "relu_range": [
+        -454.4577911376953,
+        505.3720367431641
+      ],
+      "recip_range": [
+        0.001,
+        2802.697119090625
+      ],
+      "superseded_defaults": {
+        "relu_range": [
+          -10.0,
+          10.0
+        ],
+        "recip_range": [
+          2.95,
+          46.01
+        ],
+        "source": "BloodMNIST, encrypted_primitives.json"
+      }
+    },
+    "baseline_acc": 79.67999999999999,
+    "baseline_bal": 79.68,
+    "sweep": [
+      {
+        "bits": 4,
+        "acc_both": 10.11,
+        "acc_relu_only": 10.16,
+        "acc_recip_only": 10.0,
+        "delta_both": -69.57,
+        "clamp_relu": 0.16139326160802253,
+        "clamp_recip": 0.7706724202205361
+      },
+      {
+        "bits": 6,
+        "acc_both": 20.65,
+        "acc_relu_only": 20.990000000000002,
+        "acc_recip_only": 10.0,
+        "delta_both": -59.029999999999994,
+        "clamp_relu": 0.00017099868770274732,
+        "clamp_recip": 0.00014766242242223468
+      },
+      {
+        "bits": 8,
+        "acc_both": 42.16,
+        "acc_relu_only": 42.52,
+        "acc_recip_only": 34.29,
+        "delta_both": -37.519999999999996,
+        "clamp_relu": 0.0029623496392015927,
+        "clamp_recip": 0.0028987308289004214
+      },
+      {
+        "bits": 10,
+        "acc_both": 63.519999999999996,
+        "acc_relu_only": 77.03,
+        "acc_recip_only": 78.57,
+        "delta_both": -16.159999999999997,
+        "clamp_relu": 0.05792960397784453,
+        "clamp_recip": 0.0558928893165045
+      },
+      {
+        "bits": 12,
+        "acc_both": 78.60000000000001,
+        "acc_relu_only": 78.75,
+        "acc_recip_only": 79.52,
+        "delta_both": -1.079999999999984,
+        "clamp_relu": 0.0002954990887888169,
+        "clamp_recip": 0.00027055948218427756
+      },
+      {
+        "bits": 14,
+        "acc_both": 79.67999999999999,
+        "acc_relu_only": 79.71000000000001,
+        "acc_recip_only": 79.60000000000001,
+        "delta_both": 0.0,
+        "clamp_relu": 0.00016432393712678003,
+        "clamp_recip": 0.00015772070823894774
+      },
+      {
+        "bits": 16,
+        "acc_both": 79.65,
+        "acc_relu_only": 79.67999999999999,
+        "acc_recip_only": 79.65,
+        "delta_both": -0.029999999999986926,
+        "clamp_relu": 9.596659418224098e-07,
+        "clamp_recip": 4.310694737197784e-06
+      }
+    ]
+  },
+  "wall_clock_seconds": 1292.5702788829803
+}

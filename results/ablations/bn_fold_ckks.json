@@ -1,0 +1,26 @@
+{
+  "purpose": "measure whether the BatchNorm fold survives CKKS encryption at the exact parameters ckks_classification_head.py validates",
+  "site": "final TokenBatchNorm -> classification head, folded",
+  "weights": "RANDOM INIT (no local checkpoint) -- accuracy is meaningless, numerical fidelity is not",
+  "n_samples": 500,
+  "argmax_match_rate": 1.0,
+  "max_logit_error": 9.98802261023557e-07,
+  "mean_logit_error": 6.655921634241787e-07,
+  "ms_per_sample": 75.12341451644897,
+  "ckks_params": {
+    "poly_modulus_degree": 8192,
+    "coeff_mod_bit_sizes": [
+      60,
+      40,
+      60
+    ],
+    "global_scale_bits": 40,
+    "mult_levels": 1
+  },
+  "fold_scale_shift": {
+    "max_W_ratio": 1.0006268857444178,
+    "max_b_ratio": 2.7251397456230766
+  },
+  "reference_unfolded_max_logit_error": 1.14e-05,
+  "reference_source": "experiment_results/ckks_Fix2_Normalized.json"
+}

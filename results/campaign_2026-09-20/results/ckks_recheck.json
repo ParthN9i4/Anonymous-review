@@ -1,0 +1,5 @@
+{
+  "checked_measured_trials": 126,
+  "discrepancies": [],
+  "boundary": "Recomputed saved decrypted-output errors against frozen plaintext arithmetic, not new ciphertext execution."
+}

@@ -1,0 +1,91 @@
+{
+  "args": {
+    "mode": "accuracy",
+    "bits": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16
+    ],
+    "dataset": "cifar10",
+    "epochs": 100,
+    "seed": 42,
+    "batch_size": 128,
+    "tolerance": 0.5,
+    "results_dir": "./experiment_results"
+  },
+  "mode": "accuracy",
+  "accuracy": {
+    "baseline_acc": 79.67999999999999,
+    "baseline_bal": 79.68,
+    "sweep": [
+      {
+        "bits": 4,
+        "acc_both": 9.950000000000001,
+        "acc_relu_only": 73.61,
+        "acc_recip_only": 11.55,
+        "delta_both": -69.72999999999999,
+        "clamp_relu": 0.44849151408489973,
+        "clamp_recip": 0.7384669717385548
+      },
+      {
+        "bits": 6,
+        "acc_both": 9.41,
+        "acc_relu_only": 78.22,
+        "acc_recip_only": 11.51,
+        "delta_both": -70.27,
+        "clamp_relu": 0.45674612833683664,
+        "clamp_recip": 0.7395088075844862
+      },
+      {
+        "bits": 8,
+        "acc_both": 9.62,
+        "acc_relu_only": 79.53,
+        "acc_recip_only": 11.51,
+        "delta_both": -70.05999999999999,
+        "clamp_relu": 0.458497821371232,
+        "clamp_recip": 0.74160059316296
+      },
+      {
+        "bits": 10,
+        "acc_both": 9.59,
+        "acc_relu_only": 79.56,
+        "acc_recip_only": 11.5,
+        "delta_both": -70.08999999999999,
+        "clamp_relu": 0.4588541949802245,
+        "clamp_recip": 0.7418888174429662
+      },
+      {
+        "bits": 12,
+        "acc_both": 9.64,
+        "acc_relu_only": 79.55,
+        "acc_recip_only": 11.51,
+        "delta_both": -70.03999999999999,
+        "clamp_relu": 0.4588791452613245,
+        "clamp_recip": 0.7418948181232886
+      },
+      {
+        "bits": 14,
+        "acc_both": 9.68,
+        "acc_relu_only": 79.56,
+        "acc_recip_only": 11.51,
+        "delta_both": -70.0,
+        "clamp_relu": 0.45888019580694234,
+        "clamp_recip": 0.7419023411702129
+      },
+      {
+        "bits": 16,
+        "acc_both": 9.66,
+        "acc_relu_only": 79.56,
+        "acc_recip_only": 11.51,
+        "delta_both": -70.02,
+        "clamp_relu": 0.45888022530078865,
+        "clamp_recip": 0.741906144506915
+      }
+    ]
+  },
+  "wall_clock_seconds": 1283.6860036849976
+}

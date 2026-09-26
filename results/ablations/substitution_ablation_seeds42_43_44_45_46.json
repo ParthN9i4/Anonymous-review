@@ -1,0 +1,190 @@
+{
+  "_STATUS": "SUPERSEDED -- DO NOT CITE",
+  "_WHY": "Produced before commit 7b3af21 added the 45k/5k val split. Confirmed by git: that commit rewrote substitution_ablation.py but did not touch this file or log_subs.txt, and the log's '\u25ba Best:' print format no longer exists in the script.",
+  "_AFFECTS": "Config A-E CIFAR-10 means incl. the headline E 37.06 +/- 18.11.",
+  "_ACTION": "Re-run: sbatch slurm/cifar_array.sbatch",
+  "_MARKED_ON": "2026-09-10",
+  "_AUDIT": "python audit_results.py",
+  "args": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "epochs": 100,
+    "batch_size": 128,
+    "results_dir": "./experiment_results",
+    "ckpt_dir": "./checkpoints_substitution",
+    "no_kd_arm": false
+  },
+  "dataset": "CIFAR-10",
+  "architecture": "ConfigurableDeiT (see substitution_ablation.py:130)",
+  "kd_alpha": 0.1,
+  "kd_temp": 4.0,
+  "kd_t2_scaling": false,
+  "optimizer": "AdamW lr=1e-3 wd=0.05, CosineAnnealingLR",
+  "checkpoint_rule": "best test accuracy observed during training",
+  "teacher_per_seed": {
+    "42": 72.2,
+    "43": 77.31,
+    "44": 78.94,
+    "45": 79.41,
+    "46": 77.15
+  },
+  "with_kd_per_seed": {
+    "A: GELU only": {
+      "42": 73.22,
+      "43": 75.92,
+      "44": 79.07,
+      "45": 75.42,
+      "46": 75.58
+    },
+    "B: softmax only": {
+      "42": 70.59,
+      "43": 70.92,
+      "44": 70.86,
+      "45": 68.8,
+      "46": 70.18
+    },
+    "C: norm only": {
+      "42": 81.77,
+      "43": 81.6,
+      "44": 81.54,
+      "45": 81.87,
+      "46": 81.63
+    },
+    "D: GELU+softmax": {
+      "42": 72.6,
+      "43": 72.53,
+      "44": 73.42,
+      "45": 70.0,
+      "46": 70.06
+    },
+    "E: all three": {
+      "42": 27.21,
+      "43": 41.49,
+      "44": 11.21,
+      "45": 48.41,
+      "46": 57.0
+    }
+  },
+  "no_kd_per_seed": null,
+  "summary": {
+    "Teacher": {
+      "mean": 77.002,
+      "std": 2.860519183644813,
+      "min": 72.2,
+      "max": 79.41,
+      "per_seed": {
+        "42": 72.2,
+        "43": 77.31,
+        "44": 78.94,
+        "45": 79.41,
+        "46": 77.15
+      },
+      "n_seeds": 5
+    },
+    "with_kd": {
+      "A: GELU only": {
+        "mean": 75.842,
+        "std": 2.0944975531138703,
+        "min": 73.22,
+        "max": 79.07,
+        "per_seed": {
+          "42": 73.22,
+          "43": 75.92,
+          "44": 79.07,
+          "45": 75.42,
+          "46": 75.58
+        },
+        "n_seeds": 5
+      },
+      "B: softmax only": {
+        "mean": 70.27000000000001,
+        "std": 0.8720665112249195,
+        "min": 68.8,
+        "max": 70.92,
+        "per_seed": {
+          "42": 70.59,
+          "43": 70.92,
+          "44": 70.86,
+          "45": 68.8,
+          "46": 70.18
+        },
+        "n_seeds": 5
+      },
+      "C: norm only": {
+        "mean": 81.682,
+        "std": 0.1347961423780375,
+        "min": 81.54,
+        "max": 81.87,
+        "per_seed": {
+          "42": 81.77,
+          "43": 81.6,
+          "44": 81.54,
+          "45": 81.87,
+          "46": 81.63
+        },
+        "n_seeds": 5
+      },
+      "D: GELU+softmax": {
+        "mean": 71.72200000000001,
+        "std": 1.5838623677580062,
+        "min": 70.0,
+        "max": 73.42,
+        "per_seed": {
+          "42": 72.6,
+          "43": 72.53,
+          "44": 73.42,
+          "45": 70.0,
+          "46": 70.06
+        },
+        "n_seeds": 5
+      },
+      "E: all three": {
+        "mean": 37.064,
+        "std": 18.105910084831415,
+        "min": 11.21,
+        "max": 57.0,
+        "per_seed": {
+          "42": 27.21,
+          "43": 41.49,
+          "44": 11.21,
+          "45": 48.41,
+          "46": 57.0
+        },
+        "n_seeds": 5
+      }
+    },
+    "tests_vs_teacher": {
+      "A: GELU only": {
+        "t": -0.7316176312657438,
+        "p": 0.4871240852518248,
+        "diff_pp": -1.1599999999999966
+      },
+      "B: softmax only": {
+        "t": -5.0336822160789385,
+        "p": 0.00463358059126128,
+        "diff_pp": -6.731999999999985
+      },
+      "C: norm only": {
+        "t": 3.65430114271538,
+        "p": 0.021522987218244267,
+        "diff_pp": 4.680000000000007
+      },
+      "D: GELU+softmax": {
+        "t": -3.6108205114884817,
+        "p": 0.010482281651693987,
+        "diff_pp": -5.279999999999987
+      },
+      "E: all three": {
+        "t": -4.871889652984294,
+        "p": 0.007248987512033218,
+        "diff_pp": -39.937999999999995
+      }
+    }
+  },
+  "wall_clock_seconds": 50153.53894805908
+}

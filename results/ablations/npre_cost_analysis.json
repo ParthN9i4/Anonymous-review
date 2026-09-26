@@ -1,0 +1,222 @@
+{
+  "sensitivity": {
+    "ceil(log2 d)": {
+      "npre_per_block": 55,
+      "softmax": 26,
+      "bootstraps": 32
+    },
+    "ceil(log2 d)+1": {
+      "npre_per_block": 62,
+      "softmax": 30,
+      "bootstraps": 37
+    },
+    "ceil(log2 d)+2": {
+      "npre_per_block": 69,
+      "softmax": 34,
+      "bootstraps": 41
+    }
+  },
+  "polaris_crosscheck": {
+    "polaris_total_levels": 248,
+    "polaris_bootstraps": 24,
+    "polaris_measured_s": 83.0,
+    "implied_s_per_bootstrap": 3.4583333333333335,
+    "our_extrapolated_s_per_image": 346.5538194444445,
+    "caveat": "order-of-magnitude only; ignores d, n^2 attention, packing"
+  },
+  "assumptions": {
+    "cheb_depth_rule": "ceil(log2(degree)) + 1, +/-1",
+    "polaris_source": "SoK ePrint 2026/935 Table 1 p.12",
+    "relu_goldschmidt": "literature estimates, unmeasured",
+    "levels_between_bootstraps": 10
+  },
+  "architecture": {
+    "blocks": 6,
+    "d": 192,
+    "heads": 3,
+    "tokens": 65,
+    "params": 2693192
+  },
+  "npre_block_items": [
+    {
+      "op": "QKV projection",
+      "levels": 1
+    },
+    {
+      "op": "QK^T (ct-ct)",
+      "levels": 1
+    },
+    {
+      "op": "attention x V",
+      "levels": 1
+    },
+    {
+      "op": "output projection",
+      "levels": 1
+    },
+    {
+      "op": "MLP up-projection",
+      "levels": 1
+    },
+    {
+      "op": "MLP down-projection",
+      "levels": 1
+    },
+    {
+      "op": "LayerNorm 1: mean / centring",
+      "levels": 1
+    },
+    {
+      "op": "LayerNorm 1: 1/sqrt(var) (Chebyshev deg 59)",
+      "levels": 7
+    },
+    {
+      "op": "LayerNorm 1: scale multiply",
+      "levels": 1
+    },
+    {
+      "op": "Softmax: exp (Chebyshev deg 6)",
+      "levels": 4
+    },
+    {
+      "op": "Softmax: iter 1: 1/sqrt(x) (deg 66)",
+      "levels": 8
+    },
+    {
+      "op": "Softmax: iter 1: squaring",
+      "levels": 1
+    },
+    {
+      "op": "Softmax: iter 1: renormalize multiply",
+      "levels": 1
+    },
+    {
+      "op": "Softmax: iter 2: 1/sqrt(x) (deg 24)",
+      "levels": 6
+    },
+    {
+      "op": "Softmax: iter 2: squaring",
+      "levels": 1
+    },
+    {
+      "op": "Softmax: iter 2: renormalize multiply",
+      "levels": 1
+    },
+    {
+      "op": "Softmax: iter 3: 1/sqrt(x) (deg 29)",
+      "levels": 6
+    },
+    {
+      "op": "Softmax: iter 3: squaring",
+      "levels": 1
+    },
+    {
+      "op": "Softmax: iter 3: renormalize multiply",
+      "levels": 1
+    },
+    {
+      "op": "LayerNorm 2: mean / centring",
+      "levels": 1
+    },
+    {
+      "op": "LayerNorm 2: 1/sqrt(var) (Chebyshev deg 59)",
+      "levels": 7
+    },
+    {
+      "op": "LayerNorm 2: scale multiply",
+      "levels": 1
+    },
+    {
+      "op": "MLP GELU (Chebyshev deg 119)",
+      "levels": 8
+    }
+  ],
+  "npre_total_per_block": 62,
+  "npre_softmax_levels": 30,
+  "npre_layernorm_levels": 18,
+  "npre_gelu_levels": 8,
+  "raw_total_per_block": 10,
+  "fix2_total_per_block": [
+    36,
+    37
+  ],
+  "comparison": {
+    "Model-preserving (N-PRE, POLARIS recipe)": {
+      "levels_per_block": [
+        62,
+        62
+      ],
+      "total_levels": [
+        372,
+        372
+      ],
+      "bootstraps": [
+        37,
+        37
+      ]
+    },
+    "Fix 2 (N-MOD, superseded)": {
+      "levels_per_block": [
+        36,
+        37
+      ],
+      "total_levels": [
+        216,
+        222
+      ],
+      "bootstraps": [
+        21,
+        22
+      ]
+    },
+    "EvenPow_RowSum (N-MOD, Gate 1 winner)": {
+      "levels_per_block": [
+        23,
+        23
+      ],
+      "total_levels": [
+        138,
+        138
+      ],
+      "bootstraps": [
+        13,
+        13
+      ]
+    },
+    "Raw polynomial (N-MOD, homotopy target)": {
+      "levels_per_block": [
+        10,
+        10
+      ],
+      "total_levels": [
+        60,
+        60
+      ],
+      "bootstraps": [
+        5,
+        5
+      ]
+    }
+  },
+  "depth_ratio_npre_over_fix2": [
+    1.6756756756756757,
+    1.7222222222222223
+  ],
+  "depth_ratio_npre_over_evenpow_rowsum": [
+    2.6956521739130435,
+    2.6956521739130435
+  ],
+  "evenpow_rowsum_per_block": [
+    23,
+    23
+  ],
+  "gate1": {
+    "date": "2026-08-27",
+    "winner": "EvenPow_RowSum",
+    "source": "experiment_results/fix5_evenpower_ablation.json",
+    "finding": "ReLU is dead weight, row division is load-bearing",
+    "evenpow_rowsum_acc": "94.92 +/- 0.28",
+    "fix2_acc": "94.80 +/- 0.46",
+    "p_vs_fix2": 0.6269
+  }
+}

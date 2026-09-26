@@ -1,0 +1,360 @@
+{
+  "git_commit": "4b8847f-dirty",
+  "args": {
+    "dataset": "cifar100",
+    "seeds": [
+      46
+    ],
+    "epochs": 100,
+    "batch_size": 128,
+    "results_dir": "./experiment_results",
+    "ckpt_dir": "./checkpoints_substitution",
+    "no_kd_arm": false
+  },
+  "dataset": "CIFAR100",
+  "num_classes": 100,
+  "architecture": "ConfigurableDeiT (see substitution_ablation.py:130)",
+  "kd_alpha": 0.1,
+  "kd_temp": 4.0,
+  "kd_t2_scaling": false,
+  "optimizer": "AdamW lr=1e-3 wd=0.05, CosineAnnealingLR",
+  "checkpoint_rule": "best VALIDATION accuracy observed during training (see get_dataset docstring)",
+  "teacher_per_seed": {
+    "46": {
+      "test_at_best_val": 44.6,
+      "test_final": 44.68,
+      "best_val": 44.64,
+      "best_epoch": 96
+    }
+  },
+  "with_kd_per_seed": {
+    "A: GELU only": {
+      "46": {
+        "test_at_best_val": 42.23,
+        "test_final": 42.45,
+        "best_val": 41.2,
+        "best_epoch": 91
+      }
+    },
+    "B: softmax only": {
+      "46": {
+        "test_at_best_val": 37.56,
+        "test_final": 36.21,
+        "best_val": 36.98,
+        "best_epoch": 50
+      }
+    },
+    "C: norm only": {
+      "46": {
+        "test_at_best_val": 44.08,
+        "test_final": 44.05,
+        "best_val": 43.38,
+        "best_epoch": 88
+      }
+    },
+    "D: GELU+softmax": {
+      "46": {
+        "test_at_best_val": 36.5,
+        "test_final": 35.39,
+        "best_val": 36.32,
+        "best_epoch": 30
+      }
+    },
+    "E: all three": {
+      "46": {
+        "test_at_best_val": 14.07,
+        "test_final": 12.37,
+        "best_val": 13.5,
+        "best_epoch": 94
+      }
+    },
+    "F: softmax+norm": {
+      "46": {
+        "test_at_best_val": 20.4,
+        "test_final": 1.0,
+        "best_val": 18.86,
+        "best_epoch": 97
+      }
+    },
+    "G: GELU+norm": {
+      "46": {
+        "test_at_best_val": 41.29,
+        "test_final": 41.45,
+        "best_val": 41.7,
+        "best_epoch": 96
+      }
+    },
+    "H: BPMaxsoftmax+norm": {
+      "46": {
+        "test_at_best_val": 27.95,
+        "test_final": 27.95,
+        "best_val": 26.68,
+        "best_epoch": 100
+      }
+    },
+    "I: BPMax all three": {
+      "46": {
+        "test_at_best_val": 28.61,
+        "test_final": 28.78,
+        "best_val": 27.1,
+        "best_epoch": 89
+      }
+    }
+  },
+  "no_kd_per_seed": null,
+  "summary": {
+    "Teacher": {
+      "metric": "test_at_best_val",
+      "mean": 44.6,
+      "std": 0.0,
+      "min": 44.6,
+      "max": 44.6,
+      "per_seed": {
+        "46": 44.6
+      },
+      "n_seeds": 1,
+      "sensitivity_test_final": {
+        "mean": 44.68,
+        "std": 0.0,
+        "per_seed": {
+          "46": 44.68
+        },
+        "note": "no-selection comparator; see leakage_sensitivity_check.py"
+      },
+      "best_val_per_seed": {
+        "46": 44.64
+      },
+      "best_epoch_per_seed": {
+        "46": 96
+      }
+    },
+    "with_kd": {
+      "A: GELU only": {
+        "metric": "test_at_best_val",
+        "mean": 42.23,
+        "std": 0.0,
+        "min": 42.23,
+        "max": 42.23,
+        "per_seed": {
+          "46": 42.23
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 42.45,
+          "std": 0.0,
+          "per_seed": {
+            "46": 42.45
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "46": 41.2
+        },
+        "best_epoch_per_seed": {
+          "46": 91
+        }
+      },
+      "B: softmax only": {
+        "metric": "test_at_best_val",
+        "mean": 37.56,
+        "std": 0.0,
+        "min": 37.56,
+        "max": 37.56,
+        "per_seed": {
+          "46": 37.56
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 36.21,
+          "std": 0.0,
+          "per_seed": {
+            "46": 36.21
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "46": 36.98
+        },
+        "best_epoch_per_seed": {
+          "46": 50
+        }
+      },
+      "C: norm only": {
+        "metric": "test_at_best_val",
+        "mean": 44.08,
+        "std": 0.0,
+        "min": 44.08,
+        "max": 44.08,
+        "per_seed": {
+          "46": 44.08
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 44.05,
+          "std": 0.0,
+          "per_seed": {
+            "46": 44.05
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "46": 43.38
+        },
+        "best_epoch_per_seed": {
+          "46": 88
+        }
+      },
+      "D: GELU+softmax": {
+        "metric": "test_at_best_val",
+        "mean": 36.5,
+        "std": 0.0,
+        "min": 36.5,
+        "max": 36.5,
+        "per_seed": {
+          "46": 36.5
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 35.39,
+          "std": 0.0,
+          "per_seed": {
+            "46": 35.39
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "46": 36.32
+        },
+        "best_epoch_per_seed": {
+          "46": 30
+        }
+      },
+      "E: all three": {
+        "metric": "test_at_best_val",
+        "mean": 14.07,
+        "std": 0.0,
+        "min": 14.07,
+        "max": 14.07,
+        "per_seed": {
+          "46": 14.07
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 12.37,
+          "std": 0.0,
+          "per_seed": {
+            "46": 12.37
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "46": 13.5
+        },
+        "best_epoch_per_seed": {
+          "46": 94
+        }
+      },
+      "F: softmax+norm": {
+        "metric": "test_at_best_val",
+        "mean": 20.4,
+        "std": 0.0,
+        "min": 20.4,
+        "max": 20.4,
+        "per_seed": {
+          "46": 20.4
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 1.0,
+          "std": 0.0,
+          "per_seed": {
+            "46": 1.0
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "46": 18.86
+        },
+        "best_epoch_per_seed": {
+          "46": 97
+        }
+      },
+      "G: GELU+norm": {
+        "metric": "test_at_best_val",
+        "mean": 41.29,
+        "std": 0.0,
+        "min": 41.29,
+        "max": 41.29,
+        "per_seed": {
+          "46": 41.29
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 41.45,
+          "std": 0.0,
+          "per_seed": {
+            "46": 41.45
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "46": 41.7
+        },
+        "best_epoch_per_seed": {
+          "46": 96
+        }
+      },
+      "H: BPMaxsoftmax+norm": {
+        "metric": "test_at_best_val",
+        "mean": 27.95,
+        "std": 0.0,
+        "min": 27.95,
+        "max": 27.95,
+        "per_seed": {
+          "46": 27.95
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 27.95,
+          "std": 0.0,
+          "per_seed": {
+            "46": 27.95
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "46": 26.68
+        },
+        "best_epoch_per_seed": {
+          "46": 100
+        }
+      },
+      "I: BPMax all three": {
+        "metric": "test_at_best_val",
+        "mean": 28.61,
+        "std": 0.0,
+        "min": 28.61,
+        "max": 28.61,
+        "per_seed": {
+          "46": 28.61
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 28.78,
+          "std": 0.0,
+          "per_seed": {
+            "46": 28.78
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "46": 27.1
+        },
+        "best_epoch_per_seed": {
+          "46": 89
+        }
+      }
+    }
+  },
+  "wall_clock_seconds": 14478.078202962875
+}

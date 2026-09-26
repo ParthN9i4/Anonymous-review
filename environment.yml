@@ -1,0 +1,13 @@
+name: private-vit-fhe
+channels:
+  - defaults
+dependencies:
+  - python=3.10.19
+  - pip=26.0.1
+  - pip:
+      - -r requirements.txt
+
+# Create from the repository root:
+#   conda env create -f environment.yml
+# This file deliberately has no machine-specific `prefix:` and delegates Python
+# packages to the same manifest used by pip, avoiding two dependency lists.

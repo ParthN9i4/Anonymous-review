@@ -1,0 +1,29 @@
+{
+  "local_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "torch": "2.14.0+cpu",
+    "torchvision": "0.29.0+cpu",
+    "numpy": "2.5.3",
+    "tenseal": "0.3.18"
+  },
+  "passed": [
+    "5 logic tests",
+    "frozen conversion and fixture test",
+    "native P/Q forward bit equality test",
+    "synthetic calibration/gate/held-out pipeline and report/archive",
+    "65-column encrypted softmax row: scale40; encrypted denominator and reciprocal; no intermediate decryption",
+    "degree15 encrypted polynomial: scale40",
+    "5-column encrypted softmax row: scale35",
+    "Python compilation and shell syntax",
+    "figure generation on synthetic output"
+  ],
+  "not_run": [
+    "H200 GPU execution",
+    "actual trained checkpoint replay locally: checkpoint bytes unavailable",
+    "complete trained attention block/backbone encryption",
+    "bootstrapping",
+    "proof of uniform approximation error",
+    "historically pristine held-out confirmation"
+  ],
+  "scope": "Synthetic local tests establish execution and equations, not trained-model scientific outcomes. H200 smoke gates verify installed runtime and checkpoint loading. Budget 65-column circuit is scheduled but locally tested at 5 columns; accurate scale40 tested at 65 columns."
+}

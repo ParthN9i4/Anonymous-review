@@ -1,0 +1,446 @@
+[
+  {
+    "campaign": "campaign_9i3m3x7_",
+    "planned_reports": 72,
+    "recorded_reports": 72,
+    "missing": [],
+    "trial_statuses_excluding_warmup": {
+      "MEASURED": 1116
+    },
+    "trials_failing_recorded_tolerance": 459,
+    "report_provenance": [
+      {
+        "name": "legacy_A_seed42_block0_s35",
+        "report_sha256": "5b9c3fb1993ce121d44d1482e533cdbcf6e4c591bf560fc74f0f28071ddddc81",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed42_block0_s40",
+        "report_sha256": "471f48c9eb72d9e48cc206ce819ddf61a733d8430cc3abbbb13047c7ee392622",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed42_block5_s35",
+        "report_sha256": "310eb6a7a0cab731ca0822e809b4ccde40e352e1fa08c5530fc6da241cef5cc9",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed42_block5_s40",
+        "report_sha256": "edf780b42ec93bb15273585dc143a37e9d4478f99e765a4347775a5636916aab",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed42_block0_s35",
+        "report_sha256": "bb4c049e578dcca70303707412ae57dccd82d2535d45a310b7f23cdf55a45bb9",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed42_block0_s40",
+        "report_sha256": "9bd14deeedac7ad115c4c900ed101f83ebd1a4112c583237af419b496335e7a4",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed42_block5_s35",
+        "report_sha256": "ac9c6f8e44ee56be77b7e1f4566504859b206919a7dca4980c3c6a9a11649d31",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed42_block5_s40",
+        "report_sha256": "354c934a13b566d9b90936f5f4861aab69d247f13d17b9264b40e2bc8918cc5f",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed42_block0_s35",
+        "report_sha256": "96b88e34d1761e7b4eb70a1c4714d503642e739977365e4d462922c78dc853ed",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed42_block0_s40",
+        "report_sha256": "2581f980c836c8e87525441918d09b9b148aae359199e74668d19d91a3b7602d",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed42_block5_s35",
+        "report_sha256": "4df74b6474a7c3f5c8fb368698ce1406a063981d75ee67df88a8435ca2168668",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed42_block5_s40",
+        "report_sha256": "372e279c67858eb1460904187970058b3146298b92e9b5f1694dcb8b3bb46d14",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed42_block0_s35",
+        "report_sha256": "da03a5eedad71bc64cad5ace4dd424fb227f669fc10de20abeccf2cfc9c3dd63",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed42_block0_s40",
+        "report_sha256": "948bea1726a8b372e1371d8855fb6c08c5512993502a753fdfd6c502cb90544a",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed42_block5_s35",
+        "report_sha256": "3dd960f22788b129139c0a8f13f0ee7a9c96d17c9a6ea4eab937513e8b6cfe61",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed42_block5_s40",
+        "report_sha256": "e25c889e441e8167ac02571ff7c38f24cef0240ac52bc3f76ab8174d365f369a",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed43_block0_s35",
+        "report_sha256": "d6ba3417065ad9c94d49668570a49b49d8f4ab7ee59689caeecbab81bdf5e7d0",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed43_block0_s40",
+        "report_sha256": "fdbc3709e19076ea28d207707e8562d108cff30d166fef204c3878740e752433",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed43_block5_s35",
+        "report_sha256": "4accdba0a953f2fab18bd6a6b0830cd6335ef62e9fff2953d72f54c97ba009f3",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed43_block5_s40",
+        "report_sha256": "dbbe8f8bb5af6dfa518c28ede659f44f7c8af736a2dae23a9763182df008d358",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed43_block0_s35",
+        "report_sha256": "7da8572fb65b373cdaf8cb416cc07143a99783dd0a8968fcf6e26e78cc9caac5",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed43_block0_s40",
+        "report_sha256": "1366bbb21940457bdcb3d62bf600486445437f02919baf77b623879cc2139c50",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed43_block5_s35",
+        "report_sha256": "263f2bdae7c04f65015a079e62b4ab16aba137741ac375f99ebd2ece6ce13303",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed43_block5_s40",
+        "report_sha256": "a02c189a6d31b2d7f12a843f95fdc931e447a760e9169f9dd8449e83f52eb8f5",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed43_block0_s35",
+        "report_sha256": "f8cefacdcb429a8284e57f0aa595de830007164d49d83162ba90c359f4a8c09f",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed43_block0_s40",
+        "report_sha256": "dd4fef288da73b1b9f95944cb8141f751bd0c32f5aec20ebcc42ac7fdf9caf2a",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed43_block5_s35",
+        "report_sha256": "74f099b3231420460db21f72fa14a3820ad72e645cd0c877b3c9e330438075f8",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed43_block5_s40",
+        "report_sha256": "01941d4e7ec9d702c4019ec8065fbdf37abd6be903855e7bcdec14e44a726627",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed43_block0_s35",
+        "report_sha256": "0066ca99ede4658ba4b72d84134c2b0054b13129dedc7e58c319a623facd1348",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed43_block0_s40",
+        "report_sha256": "411d574f41a0acfcb71c87a281304c1d0ff19a69b9b561dedbb20ea4e126b4e3",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed43_block5_s35",
+        "report_sha256": "dc68d4443579724347b016286e05282a064886444b4187dbe011eaa8088958f2",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed43_block5_s40",
+        "report_sha256": "2e7d4d3df428a2c9245c85394d6b0197f8ed0c0b1602389395fd79829ab83aa7",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed44_block0_s35",
+        "report_sha256": "ce68f50878d9c2b990b7174f22a7be63bbfe607ae236f8f7a35ef767ae9778af",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed44_block0_s40",
+        "report_sha256": "6f1600c05d8c6d493929a57a16c3d7d5a0de6720c9aaad76450489b80dfac392",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed44_block5_s35",
+        "report_sha256": "911877fc86d51789c3444666a714900f5a4f72a04079100f8d1fdeaae14dce33",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_A_seed44_block5_s40",
+        "report_sha256": "4c2c4bffe2743ef51e33653d024ca63117b30639ac2a4b0ad6a1d3b306bed8d2",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed44_block0_s35",
+        "report_sha256": "613767613ff31c0c18bd5dfa6280678d95b03eb769fe30e6bb5b5691a47269b5",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed44_block0_s40",
+        "report_sha256": "4da1b7876d79f7177d2487ef0c932115e2307d99e2069c35d27455b022e67424",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed44_block5_s35",
+        "report_sha256": "b129c3949baebd92fd5bd6b9c121ea39231536dad76ff38973d6ece325ba8f30",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_E_seed44_block5_s40",
+        "report_sha256": "b567cf75fd8399ee4998cb6f604614486360e804753d89b053de30a99cb6ee25",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed44_block0_s35",
+        "report_sha256": "45ef16a4a2c38d5a719eb281ffc9316ee56fcb906dff8dd7f5966fcf5a2d079e",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed44_block0_s40",
+        "report_sha256": "f0b23a18526e5d44d355af2fa369f0af864b11e4ab1f3b11c1152b936e752278",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed44_block5_s35",
+        "report_sha256": "f5a759585586a2e59ab908cb4db25537043e1ebfa438a9f2714090a477c97c1b",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "legacy_G_seed44_block5_s40",
+        "report_sha256": "848e3e89b760e1beaddb9b1755ea4432357e123c9741ef0792a0636f12ff3dc6",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed44_block0_s35",
+        "report_sha256": "897750b38d7afa1d8f26a0bf9fb564286c045cb1c05cda7874283ebdd20e2a50",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed44_block0_s40",
+        "report_sha256": "8ef5699b8e25db60d44bece9fe941364372c41a0ddc07bbceb7c59dd9219d851",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed44_block5_s35",
+        "report_sha256": "b8f9888245667306b93ce4bce309895377e6e36961b46a71780251ca523b62c6",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "power_Q_seed44_block5_s40",
+        "report_sha256": "db7a7575afe65eb5eb8d4cb7cdf90472c547469b09ef76166a180de538695e2d",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed42_block0_s35",
+        "report_sha256": "5767038d691493adf79dc70e67e6ea23c0898244a929718c3f3c5761d53947dd",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed42_block0_s40",
+        "report_sha256": "a3b7d0bf64cdd1c116f9c6f28d81cada2999d336c071c745349040da4a83878c",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed42_block5_s35",
+        "report_sha256": "c35b7d30663297c7362248449f5b6d05d2759bd6feadd3d7fdef81ec0b2de0cb",
+        "observed_failure": false,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed42_block5_s40",
+        "report_sha256": "a686de79841a9b8bade4e49b35252091d0fb302d0fd830ea96623c2cbfc73ca7",
+        "observed_failure": false,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed42_block0_s35",
+        "report_sha256": "181bdc6e2c32c4a68fcd5618a165d70f329a065eafedf45e58e127bb890af655",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed42_block0_s40",
+        "report_sha256": "3230a6cd8dffd3017a042742f590f7816c75463ca415c635d595df51015e9712",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed42_block5_s35",
+        "report_sha256": "551307b0c69ea1fd3647a0b6f355142810163010ff3f54c0d73ae8ae6559fc26",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed42_block5_s40",
+        "report_sha256": "e5af86bdf8c763b9bb08e8aaccb917657f9bec55290a755517a4c6468f38b5db",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed43_block0_s35",
+        "report_sha256": "501b21c9561ac74f743d0f6cdf5c9467e94017c6771b5b33cd2c809bd356085c",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed43_block0_s40",
+        "report_sha256": "df50f91d492b6f3b755f9d3d2b1f8d0222a3e4723a127be12c6a6c246dbe12d4",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed43_block5_s35",
+        "report_sha256": "1b35f5d1ba38abe339cd4485908c275df28c5161cee2f743ec0e1af8090bc2fb",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed43_block5_s40",
+        "report_sha256": "161322513dec35d209b7bfb1dcdc7026ae8932d1c241b036ed59dc81886daafc",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed43_block0_s35",
+        "report_sha256": "2877a13d3791b35ca5fbf034c905aa3bce144a4792dbd7c8a7ec5f2a744d7e57",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed43_block0_s40",
+        "report_sha256": "7386a13f927bbdee70a7885f0386dd238b826b1d1e8d16541e13427bd24852df",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed43_block5_s35",
+        "report_sha256": "f1e21d737a3629e872f9aafdbd92ee6938fe3a6377235d8579133688d83f43e4",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed43_block5_s40",
+        "report_sha256": "b13e54bd37842dfde38c4fdf0fbc08ce68842f793e0d4bba0a830645bff14918",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed44_block0_s35",
+        "report_sha256": "45e6244400ef0cf29e51bf14317f2591e68a69e9b35edd8f579fd44cb627c6f0",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed44_block0_s40",
+        "report_sha256": "d07d97bf1045f17c9532e2e12f64abef9ae54ef4154a70b523697b7d9711aad1",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed44_block5_s35",
+        "report_sha256": "e2543a43c5e5beaeea8ab8e166d4f5f8577815f85505cd1ae85a94bc58364a46",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_ln_seed44_block5_s40",
+        "report_sha256": "e064b41e467075c36f0cfcb0102162344e40021432515d27966e158583c05dcb",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed44_block0_s35",
+        "report_sha256": "a6c02e342b98c650d8fc10b04df8c400ba8aeed51f78fc1c81e7b6d22d020055",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed44_block0_s40",
+        "report_sha256": "e439ecb9e0c8f8cd1b88ed11e08b33d8cb889ab1b2ce722e8dc0a0059d05bd39",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed44_block5_s35",
+        "report_sha256": "e88edb776ea406896eef9f95f88fc27aa6f2f395f251afda151ae97d8e2a3d1d",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      },
+      {
+        "name": "regularized_quadratic_bn_seed44_block5_s40",
+        "report_sha256": "975725ced7c7facccc4bef49189a09db6712048b831399faf6f9c49999e2f99b",
+        "observed_failure": true,
+        "server_has_secret_key": false
+      }
+    ]
+  }
+]

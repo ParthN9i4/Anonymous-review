@@ -1,0 +1,5 @@
+schedule,n,test_mean,test_sample_sd,near_chance_selected_test,invalid_test_image_seed_events
+standard,2,77.405,0.5444722215136488,0,0
+abrupt,5,15.852,13.057529245611516,4,66
+smooth_all,5,10.052,0.11627553482998897,5,54
+staged_components,2,10.004999999999999,0.007071067811865324,2,29

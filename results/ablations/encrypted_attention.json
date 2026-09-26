@@ -1,0 +1,40 @@
+{
+  "purpose": "measure the two ciphertext-ciphertext matmuls of a real attention head under CKKS (audit gap 1, second half)",
+  "packing": "naive: one ciphertext per row, one ct-ct dot per output element. Deliberately not the efficient construction; an upper bound and a correctness baseline.",
+  "weights": "RANDOM INIT (no local checkpoint) -- numerical fidelity and level consumption only, not accuracy",
+  "excluded": "row normalisation (Goldschmidt, 13 levels) measured separately in encrypted_primitives.json",
+  "tokens": 8,
+  "d_head": 64,
+  "heads_in_model": 3,
+  "blocks_in_model": 6,
+  "ckks": {
+    "N": 32768,
+    "scale_bits": 40,
+    "levels_allocated": 5,
+    "levels_used": "4 total across 3 separately-measured stages (not continuous)",
+    "security": "128-bit"
+  },
+  "qk": {
+    "max_abs_err": 3.3534093766274253e-06,
+    "mean_abs_err": 1.4624319542603384e-06,
+    "seconds": 14.212125539779663,
+    "n_dots": 64,
+    "depth": 1
+  },
+  "activation": {
+    "max_abs_err": 4.338917128920983e-06,
+    "mean_abs_err": 8.249333192328432e-07,
+    "seconds": 0.803546667098999,
+    "depth": 2
+  },
+  "av": {
+    "max_abs_err": 2.0182950631442154e-05,
+    "mean_abs_err": 1.0745572706731897e-05,
+    "max_rel_err": 0.004782851751260071,
+    "seconds": 72.13684320449829,
+    "n_dots": 512,
+    "depth": 1
+  },
+  "total_seconds": 87.72470188140869,
+  "SCOPE_CORRECTION_2026_09_09": "COMPONENT-WISE, NOT A CHAINED CIRCUIT. This measurement decrypts between stages and re-encrypts at full modulus. The reported level counts are a SUM of three independent measurements (QK^T 1, activation 2, attn.V 1), not four levels consumed continuously, and the reported error does NOT accumulate across stages because each decryption resets the noise. Do not describe this as end-to-end encrypted attention. A continuously encrypted head - decrypting only after attn.V - is not implemented."
+}

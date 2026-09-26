@@ -1,0 +1,2 @@
+/apps/codes/anaconda-2025.12-2/lib/python3.13/site-packages/numpy/polynomial/chebyshev.py:1626: RankWarning: The fit may be poorly conditioned
+  return pu._fit(chebvander, x, y, deg, rcond, full, w)

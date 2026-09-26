@@ -1,0 +1,107 @@
+{
+  "scope": "Four fixed CIFAR-10 images, block-0 class token GELU only",
+  "source": "/home/anonuser/pvit_results/final_assessment/campaign_23crox26/conversion/preserve_s43_budget_all_n2048",
+  "fixture_sha256": "c1d81abe8c32cfc2d3cff9df04f10f6132bd0edfe351bd183c89cc151c0da955",
+  "frozen_sha256": "b8ee2fecabfe08cf98ab0dede11e49d16a3f59599f5a32c1e98c021e7a17d08c",
+  "block": 0,
+  "degree": 31,
+  "parameters": {
+    "ring_degree": 32768,
+    "modulus_bits": [
+      60,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      60
+    ],
+    "scale_bits": 35,
+    "backend": "TenSEAL",
+    "backend_version": "0.3.18"
+  },
+  "setup_seconds": 6.232590495608747,
+  "fit_domain": [
+    -15.18612756729126,
+    16.035157108306883
+  ],
+  "fixture_outside_fraction": 0.0,
+  "trials": [
+    {
+      "repeat": 0,
+      "cost": {
+        "logical_outer_operations": {
+          "ciphertext_plaintext_scalar_multiply_outside_polyval": 1,
+          "plaintext_subtract_outside_polyval": 1,
+          "polyval_calls": 1
+        },
+        "logical_count_scope": "Explicit vector operations excluding backend polynomial evaluation internals; not total physical multiplications or scalar MACs.",
+        "encrypt_seconds": 0.15495375730097294,
+        "input_serialization_load_seconds": 0.1509617092087865,
+        "server_evaluation_seconds": 18.68636577297002,
+        "output_serialization_seconds": 0.08415261469781399,
+        "load_and_decrypt_seconds": 0.08342339284718037,
+        "input_ciphertext_bytes": 6787661,
+        "output_ciphertext_bytes": 4700336,
+        "input_ciphertexts": 1,
+        "output_ciphertexts": 1,
+        "input_modulus_primes": 19,
+        "output_modulus_primes": 13,
+        "levels_consumed": 6,
+        "intermediate_decryptions": 0,
+        "physical_rotations": null,
+        "physical_relinearizations": null,
+        "physical_rescales": null,
+        "ciphertext_scale": 34359738368.0
+      },
+      "ckks_max_abs": 117.42202289963491,
+      "approximation_max_abs": 0.02050429061899571,
+      "nonfinite": 0
+    },
+    {
+      "repeat": 1,
+      "cost": {
+        "logical_outer_operations": {
+          "ciphertext_plaintext_scalar_multiply_outside_polyval": 1,
+          "plaintext_subtract_outside_polyval": 1,
+          "polyval_calls": 1
+        },
+        "logical_count_scope": "Explicit vector operations excluding backend polynomial evaluation internals; not total physical multiplications or scalar MACs.",
+        "encrypt_seconds": 0.15865812823176384,
+        "input_serialization_load_seconds": 0.15184323396533728,
+        "server_evaluation_seconds": 18.633956752717495,
+        "output_serialization_seconds": 0.09135530609637499,
+        "load_and_decrypt_seconds": 0.08471227437257767,
+        "input_ciphertext_bytes": 6787073,
+        "output_ciphertext_bytes": 4700975,
+        "input_ciphertexts": 1,
+        "output_ciphertexts": 1,
+        "input_modulus_primes": 19,
+        "output_modulus_primes": 13,
+        "levels_consumed": 6,
+        "intermediate_decryptions": 0,
+        "physical_rotations": null,
+        "physical_relinearizations": null,
+        "physical_rescales": null,
+        "ciphertext_scale": 34359738368.0
+      },
+      "ckks_max_abs": 108.83820314401754,
+      "approximation_max_abs": 0.02050429061899571,
+      "nonfinite": 0
+    }
+  ],
+  "limitation": "Primitive only: excludes upstream encrypted layers and model inference"
+}

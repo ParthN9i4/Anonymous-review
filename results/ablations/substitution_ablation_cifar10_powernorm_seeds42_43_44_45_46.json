@@ -1,0 +1,293 @@
+{
+  "git_commit": "3abab42-dirty",
+  "args": {
+    "dataset": "cifar10",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "epochs": 100,
+    "batch_size": 128,
+    "num_workers": 2,
+    "gpu_memory_fraction": 0.2,
+    "results_dir": "./experiment_results",
+    "ckpt_dir": "./checkpoints_substitution",
+    "run_tag": "powernorm",
+    "config_set": "powernorm",
+    "deterministic": true,
+    "save_checkpoints": true,
+    "no_kd_arm": false
+  },
+  "dataset": "CIFAR10",
+  "num_classes": 10,
+  "architecture": "ConfigurableDeiT (see substitution_ablation.py:130)",
+  "kd_alpha": 0.1,
+  "kd_temp": 4.0,
+  "kd_t2_scaling": false,
+  "optimizer": "AdamW lr=1e-3 wd=0.05, CosineAnnealingLR",
+  "checkpoint_rule": "best VALIDATION accuracy observed during training (see get_dataset docstring)",
+  "config_set": "powernorm",
+  "config_masks": {
+    "P: powernorm+LN": null,
+    "Q: powernorm+BN": null
+  },
+  "teacher_per_seed": {
+    "42": {
+      "test_at_best_val": 77.87,
+      "test_final": 77.93,
+      "best_val": 78.38,
+      "best_epoch": 97,
+      "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_teacher_seed42.pth"
+    },
+    "43": {
+      "test_at_best_val": 75.08,
+      "test_final": 75.69,
+      "best_val": 76.1,
+      "best_epoch": 76,
+      "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_teacher_seed43.pth"
+    },
+    "44": {
+      "test_at_best_val": 75.7,
+      "test_final": 75.68,
+      "best_val": 77.04,
+      "best_epoch": 95,
+      "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_teacher_seed44.pth"
+    },
+    "45": {
+      "test_at_best_val": 77.87,
+      "test_final": 78.4,
+      "best_val": 78.24,
+      "best_epoch": 66,
+      "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_teacher_seed45.pth"
+    },
+    "46": {
+      "test_at_best_val": 73.97,
+      "test_final": 74.96,
+      "best_val": 75.62,
+      "best_epoch": 80,
+      "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_teacher_seed46.pth"
+    }
+  },
+  "with_kd_per_seed": {
+    "P: powernorm+LN": {
+      "42": {
+        "test_at_best_val": 78.31,
+        "test_final": 78.25,
+        "best_val": 78.66,
+        "best_epoch": 83,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_P_seed42.pth"
+      },
+      "43": {
+        "test_at_best_val": 77.77,
+        "test_final": 78.23,
+        "best_val": 79.22,
+        "best_epoch": 86,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_P_seed43.pth"
+      },
+      "44": {
+        "test_at_best_val": 78.24,
+        "test_final": 78.37,
+        "best_val": 78.62,
+        "best_epoch": 94,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_P_seed44.pth"
+      },
+      "45": {
+        "test_at_best_val": 78.35,
+        "test_final": 78.86,
+        "best_val": 79.72,
+        "best_epoch": 79,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_P_seed45.pth"
+      },
+      "46": {
+        "test_at_best_val": 77.73,
+        "test_final": 78.03,
+        "best_val": 78.3,
+        "best_epoch": 73,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_P_seed46.pth"
+      }
+    },
+    "Q: powernorm+BN": {
+      "42": {
+        "test_at_best_val": 79.65,
+        "test_final": 79.77,
+        "best_val": 80.08,
+        "best_epoch": 91,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_Q_seed42.pth"
+      },
+      "43": {
+        "test_at_best_val": 80.63,
+        "test_final": 80.74,
+        "best_val": 81.44,
+        "best_epoch": 72,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_Q_seed43.pth"
+      },
+      "44": {
+        "test_at_best_val": 80.39,
+        "test_final": 80.68,
+        "best_val": 80.24,
+        "best_epoch": 81,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_Q_seed44.pth"
+      },
+      "45": {
+        "test_at_best_val": 80.47,
+        "test_final": 80.46,
+        "best_val": 81.12,
+        "best_epoch": 95,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_Q_seed45.pth"
+      },
+      "46": {
+        "test_at_best_val": 80.3,
+        "test_final": 80.53,
+        "best_val": 81.3,
+        "best_epoch": 86,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_powernorm_seeds42_43_44_45_46_Q_seed46.pth"
+      }
+    }
+  },
+  "no_kd_per_seed": null,
+  "summary": {
+    "Teacher": {
+      "metric": "test_at_best_val",
+      "mean": 76.098,
+      "std": 1.7322730731613911,
+      "min": 73.97,
+      "max": 77.87,
+      "per_seed": {
+        "42": 77.87,
+        "43": 75.08,
+        "44": 75.7,
+        "45": 77.87,
+        "46": 73.97
+      },
+      "n_seeds": 5,
+      "sensitivity_test_final": {
+        "mean": 76.53200000000001,
+        "std": 1.5288786740614877,
+        "per_seed": {
+          "42": 77.93,
+          "43": 75.69,
+          "44": 75.68,
+          "45": 78.4,
+          "46": 74.96
+        },
+        "note": "no-selection comparator; see leakage_sensitivity_check.py"
+      },
+      "best_val_per_seed": {
+        "42": 78.38,
+        "43": 76.1,
+        "44": 77.04,
+        "45": 78.24,
+        "46": 75.62
+      },
+      "best_epoch_per_seed": {
+        "42": 97,
+        "43": 76,
+        "44": 95,
+        "45": 66,
+        "46": 80
+      }
+    },
+    "with_kd": {
+      "P: powernorm+LN": {
+        "metric": "test_at_best_val",
+        "mean": 78.08,
+        "std": 0.30413812651490935,
+        "min": 77.73,
+        "max": 78.35,
+        "per_seed": {
+          "42": 78.31,
+          "43": 77.77,
+          "44": 78.24,
+          "45": 78.35,
+          "46": 77.73
+        },
+        "n_seeds": 5,
+        "sensitivity_test_final": {
+          "mean": 78.348,
+          "std": 0.3111591232793914,
+          "per_seed": {
+            "42": 78.25,
+            "43": 78.23,
+            "44": 78.37,
+            "45": 78.86,
+            "46": 78.03
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "42": 78.66,
+          "43": 79.22,
+          "44": 78.62,
+          "45": 79.72,
+          "46": 78.3
+        },
+        "best_epoch_per_seed": {
+          "42": 83,
+          "43": 86,
+          "44": 94,
+          "45": 79,
+          "46": 73
+        }
+      },
+      "Q: powernorm+BN": {
+        "metric": "test_at_best_val",
+        "mean": 80.288,
+        "std": 0.37672270969507177,
+        "min": 79.65,
+        "max": 80.63,
+        "per_seed": {
+          "42": 79.65,
+          "43": 80.63,
+          "44": 80.39,
+          "45": 80.47,
+          "46": 80.3
+        },
+        "n_seeds": 5,
+        "sensitivity_test_final": {
+          "mean": 80.43599999999999,
+          "std": 0.38888301582866963,
+          "per_seed": {
+            "42": 79.77,
+            "43": 80.74,
+            "44": 80.68,
+            "45": 80.46,
+            "46": 80.53
+          },
+          "note": "no-selection comparator; see leakage_sensitivity_check.py"
+        },
+        "best_val_per_seed": {
+          "42": 80.08,
+          "43": 81.44,
+          "44": 80.24,
+          "45": 81.12,
+          "46": 81.3
+        },
+        "best_epoch_per_seed": {
+          "42": 91,
+          "43": 72,
+          "44": 81,
+          "45": 95,
+          "46": 86
+        }
+      }
+    },
+    "tests_vs_teacher": {
+      "P: powernorm+LN": {
+        "t": 2.5198792916409656,
+        "p": 0.06179684761825331,
+        "diff_pp": 1.9819999999999993,
+        "metric": "test_at_best_val"
+      },
+      "Q: powernorm+BN": {
+        "t": 5.285039692050646,
+        "p": 0.00476488362991556,
+        "diff_pp": 4.189999999999998,
+        "metric": "test_at_best_val"
+      }
+    }
+  },
+  "wall_clock_seconds": 17237.078924179077
+}

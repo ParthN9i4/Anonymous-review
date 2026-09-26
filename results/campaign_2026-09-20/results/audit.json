@@ -1,0 +1,584 @@
+{
+  "prediction_files_recomputed": 123,
+  "metric_mismatches": [],
+  "all_static_review": true,
+  "clean_summary": {
+    "budget_gelu": {
+      "seed": [
+        42,
+        43,
+        44
+      ],
+      "reference_accuracy": [
+        86.17,
+        86.33,
+        86.32
+      ],
+      "converted_accuracy": [
+        26.93,
+        25.55,
+        22.720000000000002
+      ],
+      "invalid": [
+        0,
+        0,
+        0
+      ],
+      "failure_count": [
+        10000,
+        10000,
+        10000
+      ],
+      "prediction_flips": [
+        7220,
+        7338,
+        7678
+      ],
+      "range_accepted": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "range_accepted_risk": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "precision_extra_true_positive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "budget_norm": {
+      "seed": [
+        42,
+        43,
+        44
+      ],
+      "reference_accuracy": [
+        86.17,
+        86.33,
+        86.32
+      ],
+      "converted_accuracy": [
+        85.79,
+        86.16,
+        85.84
+      ],
+      "invalid": [
+        9,
+        3,
+        6
+      ],
+      "failure_count": [
+        9864,
+        9638,
+        9960
+      ],
+      "prediction_flips": [
+        290,
+        250,
+        407
+      ],
+      "range_accepted": [
+        0.9975,
+        0.9973,
+        0.9961
+      ],
+      "range_accepted_risk": [
+        0.9863659147869674,
+        0.96380226611852,
+        0.995984338921795
+      ],
+      "precision_extra_true_positive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "budget_attention": {
+      "seed": [
+        42,
+        43,
+        44
+      ],
+      "reference_accuracy": [
+        86.17,
+        86.33,
+        86.32
+      ],
+      "converted_accuracy": [
+        34.9,
+        19.24,
+        41.5
+      ],
+      "invalid": [
+        0,
+        0,
+        0
+      ],
+      "failure_count": [
+        10000,
+        10000,
+        10000
+      ],
+      "prediction_flips": [
+        6428,
+        8064,
+        5788
+      ],
+      "range_accepted": [
+        0.9608,
+        0.9741,
+        0.9605
+      ],
+      "range_accepted_risk": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "precision_extra_true_positive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "budget_all": {
+      "seed": [
+        42,
+        43,
+        44
+      ],
+      "reference_accuracy": [
+        86.17,
+        86.33,
+        86.32
+      ],
+      "converted_accuracy": [
+        13.43,
+        7.6,
+        9.610000000000001
+      ],
+      "invalid": [
+        1374,
+        3328,
+        1939
+      ],
+      "failure_count": [
+        10000,
+        10000,
+        10000
+      ],
+      "prediction_flips": [
+        7262,
+        5904,
+        7037
+      ],
+      "range_accepted": [
+        0.5019,
+        0.005,
+        0.0728
+      ],
+      "range_accepted_risk": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "precision_extra_true_positive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "accurate_gelu": {
+      "seed": [
+        42,
+        43,
+        44
+      ],
+      "reference_accuracy": [
+        86.17,
+        86.33,
+        86.32
+      ],
+      "converted_accuracy": [
+        78.11,
+        77.06,
+        72.43
+      ],
+      "invalid": [
+        0,
+        0,
+        0
+      ],
+      "failure_count": [
+        9876,
+        9940,
+        9943
+      ],
+      "prediction_flips": [
+        1660,
+        1880,
+        2398
+      ],
+      "range_accepted": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "range_accepted_risk": [
+        0.9876,
+        0.994,
+        0.9943
+      ],
+      "precision_extra_true_positive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "accurate_norm": {
+      "seed": [
+        42,
+        43,
+        44
+      ],
+      "reference_accuracy": [
+        86.17,
+        86.33,
+        86.32
+      ],
+      "converted_accuracy": [
+        85.96000000000001,
+        86.28,
+        86.14
+      ],
+      "invalid": [
+        10,
+        4,
+        10
+      ],
+      "failure_count": [
+        7668,
+        1436,
+        9336
+      ],
+      "prediction_flips": [
+        71,
+        18,
+        114
+      ],
+      "range_accepted": [
+        0.9976,
+        0.9965,
+        0.9968
+      ],
+      "range_accepted_risk": [
+        0.7666399358460305,
+        0.14320120421475163,
+        0.9333868378812199
+      ],
+      "precision_extra_true_positive": [
+        2,
+        1,
+        3
+      ]
+    },
+    "accurate_attention": {
+      "seed": [
+        42,
+        43,
+        44
+      ],
+      "reference_accuracy": [
+        86.17,
+        86.33,
+        86.32
+      ],
+      "converted_accuracy": [
+        79.03999999999999,
+        78.32000000000001,
+        81.83
+      ],
+      "invalid": [
+        1,
+        0,
+        0
+      ],
+      "failure_count": [
+        9938,
+        9996,
+        9837
+      ],
+      "prediction_flips": [
+        1772,
+        1860,
+        1383
+      ],
+      "range_accepted": [
+        0.9919,
+        0.9976,
+        0.9973
+      ],
+      "range_accepted_risk": [
+        0.993850186510737,
+        0.9995990376904571,
+        0.9836558708512985
+      ],
+      "precision_extra_true_positive": [
+        0,
+        0,
+        0
+      ]
+    },
+    "accurate_all": {
+      "seed": [
+        42,
+        43,
+        44
+      ],
+      "reference_accuracy": [
+        86.17,
+        86.33,
+        86.32
+      ],
+      "converted_accuracy": [
+        70.91,
+        66.94,
+        70.78
+      ],
+      "invalid": [
+        11,
+        12,
+        5
+      ],
+      "failure_count": [
+        10000,
+        10000,
+        10000
+      ],
+      "prediction_flips": [
+        2666,
+        3076,
+        2685
+      ],
+      "range_accepted": [
+        0.9957,
+        0.9955,
+        0.9922
+      ],
+      "range_accepted_risk": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "precision_extra_true_positive": [
+        2,
+        2,
+        4
+      ]
+    }
+  },
+  "ckks_summary": {
+    "gelu_budget": {
+      "trials": 18,
+      "ckks_max_abs": {
+        "min": 0.0002069427870177165,
+        "median": 0.00024225604668792755,
+        "max": 0.00028970645810133533
+      },
+      "approximation_max_abs": {
+        "min": 0.24789370505287578,
+        "median": 0.6338612610748272,
+        "max": 0.6867139882412069
+      },
+      "server_evaluation_seconds": {
+        "min": 1.2945227599702775,
+        "median": 1.310722475638613,
+        "max": 1.3319710339419544
+      },
+      "input_ciphertext_bytes": {
+        "min": 6786622.0,
+        "median": 6787488.0,
+        "max": 6788694.0
+      },
+      "output_ciphertext_bytes": {
+        "min": 5395182.0,
+        "median": 5396023.0,
+        "max": 5397112.0
+      },
+      "levels_consumed": {
+        "min": 4.0,
+        "median": 4.0,
+        "max": 4.0
+      }
+    },
+    "gelu_accurate": {
+      "trials": 24,
+      "ckks_max_abs": {
+        "min": 3.69913067629693e-05,
+        "median": 7.815693138669977e-05,
+        "max": 0.00018351160923694987
+      },
+      "approximation_max_abs": {
+        "min": 0.043202330742061215,
+        "median": 0.12468883333711135,
+        "max": 0.23065579600997707
+      },
+      "server_evaluation_seconds": {
+        "min": 3.1989126289263368,
+        "median": 3.23109307163395,
+        "max": 3.248471145052463
+      },
+      "input_ciphertext_bytes": {
+        "min": 7648288.0,
+        "median": 7648888.5,
+        "max": 7649783.0
+      },
+      "output_ciphertext_bytes": {
+        "min": 5668270.0,
+        "median": 5669570.0,
+        "max": 5670423.0
+      },
+      "levels_consumed": {
+        "min": 5.0,
+        "median": 5.0,
+        "max": 5.0
+      }
+    },
+    "ln_inverse_sqrt_budget": {
+      "trials": 18,
+      "ckks_max_abs": {
+        "min": 0.00013476099061288105,
+        "median": 0.0007976991271307909,
+        "max": 0.0009505952870387802
+      },
+      "approximation_max_abs": {
+        "min": 0.0385918900285101,
+        "median": 0.05988702992175021,
+        "max": 0.06956253682751579
+      },
+      "server_evaluation_seconds": {
+        "min": 1.2905693799257278,
+        "median": 1.3022074627224356,
+        "max": 1.322948444634676
+      },
+      "input_ciphertext_bytes": {
+        "min": 6786320.0,
+        "median": 6787365.5,
+        "max": 6788711.0
+      },
+      "output_ciphertext_bytes": {
+        "min": 5394658.0,
+        "median": 5395874.0,
+        "max": 5396566.0
+      },
+      "levels_consumed": {
+        "min": 4.0,
+        "median": 4.0,
+        "max": 4.0
+      }
+    },
+    "ln_inverse_sqrt_accurate": {
+      "trials": 24,
+      "ckks_max_abs": {
+        "min": 2.0482818227307575e-05,
+        "median": 0.00016591291867948388,
+        "max": 0.0009580686582212339
+      },
+      "approximation_max_abs": {
+        "min": 0.00011113166221754511,
+        "median": 0.0026261967853679347,
+        "max": 0.030318976946779597
+      },
+      "server_evaluation_seconds": {
+        "min": 3.1919947443529963,
+        "median": 3.232246066443622,
+        "max": 3.2646888941526413
+      },
+      "input_ciphertext_bytes": {
+        "min": 7648443.0,
+        "median": 7648997.0,
+        "max": 7649680.0
+      },
+      "output_ciphertext_bytes": {
+        "min": 5669088.0,
+        "median": 5669798.0,
+        "max": 5670499.0
+      },
+      "levels_consumed": {
+        "min": 5.0,
+        "median": 5.0,
+        "max": 5.0
+      }
+    },
+    "softmax_row_budget": {
+      "trials": 18,
+      "ckks_max_abs": {
+        "min": 6.9648485549367485e-06,
+        "median": 5.1501580549912634e-05,
+        "max": 0.00013426334932149786
+      },
+      "approximation_max_abs": {
+        "min": 0.046144449914753166,
+        "median": 0.07652553590295047,
+        "max": 0.21544602683079783
+      },
+      "server_evaluation_seconds": {
+        "min": 50.4751209449023,
+        "median": 50.85752583434805,
+        "max": 51.998527463991195
+      },
+      "input_ciphertext_bytes": {
+        "min": 441174555.0,
+        "median": 441183065.0,
+        "max": 441189987.0
+      },
+      "output_ciphertext_bytes": {
+        "min": 169852679.0,
+        "median": 169858750.5,
+        "max": 169866992.0
+      },
+      "levels_consumed": {
+        "min": 12.0,
+        "median": 12.0,
+        "max": 12.0
+      }
+    },
+    "softmax_row_accurate": {
+      "trials": 24,
+      "ckks_max_abs": {
+        "min": 4.980508790285859e-06,
+        "median": 1.2201379210815405e-05,
+        "max": 3.251899652934043e-05
+      },
+      "approximation_max_abs": {
+        "min": 0.0013306832000860858,
+        "median": 0.02317073008325087,
+        "max": 0.07760719633359003
+      },
+      "server_evaluation_seconds": {
+        "min": 94.6813080040738,
+        "median": 95.42581598111428,
+        "max": 96.83701585512608
+      },
+      "input_ciphertext_bytes": {
+        "min": 497172260.0,
+        "median": 497178073.5,
+        "max": 497188801.0
+      },
+      "output_ciphertext_bytes": {
+        "min": 111248630.0,
+        "median": 111255706.0,
+        "max": 111259964.0
+      },
+      "levels_consumed": {
+        "min": 15.0,
+        "median": 15.0,
+        "max": 15.0
+      }
+    }
+  },
+  "scope": "Recomputed archived predictions, not checkpoint execution; repeated trials and correlated inputs are not independent seeds."
+}

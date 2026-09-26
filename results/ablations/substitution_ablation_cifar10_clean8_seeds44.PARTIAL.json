@@ -1,0 +1,115 @@
+{
+  "STATUS": "PARTIAL -- job still running or was killed before finishing",
+  "git_commit": "5428ef1-dirty",
+  "runs_completed": 9,
+  "args": {
+    "dataset": "cifar10",
+    "seeds": [
+      44
+    ],
+    "epochs": 100,
+    "batch_size": 128,
+    "num_workers": 2,
+    "gpu_memory_fraction": 0.2,
+    "results_dir": "./experiment_results",
+    "ckpt_dir": "./checkpoints_substitution",
+    "run_tag": "clean8",
+    "config_set": "primary",
+    "save_checkpoints": true,
+    "no_kd_arm": false
+  },
+  "dataset": "cifar10",
+  "teacher_per_seed": {
+    "44": {
+      "test_at_best_val": 75.75,
+      "test_final": 75.75,
+      "best_val": 75.98,
+      "best_epoch": 89,
+      "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_teacher_seed44.pth"
+    }
+  },
+  "with_kd_per_seed": {
+    "0: unchanged KD": {
+      "44": {
+        "test_at_best_val": 75.33,
+        "test_final": 76.07,
+        "best_val": 76.8,
+        "best_epoch": 80,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_0_seed44.pth"
+      }
+    },
+    "A: GELU only": {
+      "44": {
+        "test_at_best_val": 75.98,
+        "test_final": 75.89,
+        "best_val": 76.68,
+        "best_epoch": 91,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_A_seed44.pth"
+      }
+    },
+    "B: softmax only": {
+      "44": {
+        "test_at_best_val": 68.12,
+        "test_final": 68.43,
+        "best_val": 68.88,
+        "best_epoch": 77,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_B_seed44.pth"
+      }
+    },
+    "C: norm only": {
+      "44": {
+        "test_at_best_val": 80.84,
+        "test_final": 80.78,
+        "best_val": 80.76,
+        "best_epoch": 87,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_C_seed44.pth"
+      }
+    },
+    "D: GELU+softmax": {
+      "44": {
+        "test_at_best_val": 68.23,
+        "test_final": 68.83,
+        "best_val": 69.3,
+        "best_epoch": 59,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_D_seed44.pth"
+      }
+    },
+    "E: all three": {
+      "44": {
+        "test_at_best_val": 35.59,
+        "test_final": 10.01,
+        "best_val": 34.3,
+        "best_epoch": 60,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_E_seed44.pth"
+      }
+    },
+    "F: softmax+norm": {
+      "44": {
+        "test_at_best_val": 36.34,
+        "test_final": 36.33,
+        "best_val": 36.04,
+        "best_epoch": 82,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_F_seed44.pth"
+      }
+    },
+    "G: GELU+norm": {
+      "44": {
+        "test_at_best_val": 79.12,
+        "test_final": 79.07,
+        "best_val": 79.48,
+        "best_epoch": 81,
+        "checkpoint_path": "./checkpoints_substitution/substitution_ablation_cifar10_clean8_seeds44_G_seed44.pth"
+      }
+    }
+  },
+  "no_kd_per_seed": {
+    "0: unchanged KD": {},
+    "A: GELU only": {},
+    "B: softmax only": {},
+    "C: norm only": {},
+    "D: GELU+softmax": {},
+    "E: all three": {},
+    "F: softmax+norm": {},
+    "G: GELU+norm": {}
+  }
+}

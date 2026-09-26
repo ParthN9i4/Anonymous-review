@@ -1,0 +1,52 @@
+{
+  "backend": "openfhe-python",
+  "method": "packed",
+  "row_size": 256,
+  "batch": 4096,
+  "n_samples": 50,
+  "argmax_match_vs_plaintext": 50,
+  "match_rate_percent": 100.0,
+  "max_logit_error": 7.388e-07,
+  "mean_logit_error": 2.832e-07,
+  "mean_time_ms": 618.57,
+  "ckks_params": {
+    "multiplicative depth (requested)": "2",
+    "scaling mod size   (log2 delta)": "40 bits",
+    "first mod size     (log2 q0)": "60 bits",
+    "batch size (slots summed by EvalSum)": "4096",
+    "security level": "HEStd_128_classic",
+    "scaling technique (requested)": "fixedauto",
+    "scaling technique (effective)": "FIXEDAUTO",
+    "ring dimension N (chosen by OpenFHE)": "16384",
+    "available slots (N/2)": "8192",
+    "scaling factor delta": "1099511627776.0",
+    "ciphertext modulus q": "1.3937949549134258e+42"
+  },
+  "fixture_meta": {
+    "created_by": "export_head_fixture.py",
+    "weights": "RANDOM INIT (no checkpoint) - accuracy is meaningless, numerical fidelity is not",
+    "cls_source": "cifar10-test:C:\\Users\\YOUR_USERNAME\\Documents\\Documents\\PPML\\SEAFlicker-FHE\\notebooks\\.data",
+    "seed": 42,
+    "arch": {
+      "norm_type": "batchnorm",
+      "attn_type": "poly_normed",
+      "gelu_type": "poly"
+    },
+    "embed_dim": 192,
+    "num_classes": 10,
+    "n_samples": 50,
+    "tenseal_reference": {
+      "poly_modulus_degree": 8192,
+      "coeff_mod_bit_sizes": [
+        60,
+        40,
+        60
+      ],
+      "scale_bits": 40,
+      "mult_levels": 1
+    },
+    "tenseal_mean_ms": 99.9
+  },
+  "argmax_match_vs_tenseal": 50,
+  "max_abs_diff_vs_tenseal": 1.986e-06
+}

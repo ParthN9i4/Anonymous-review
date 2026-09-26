@@ -1,0 +1,9 @@
+{
+  "snapshot_files_matching_archived_hashes": 34,
+  "snapshot_files_without_comparable_hash": [],
+  "saved_prediction_files_checked": 123,
+  "saved_CKKS_trial_errors_checked": 126,
+  "new_checkpoint_runs": 0,
+  "new_ciphertext_execution": 0,
+  "private_repo_only": true
+}

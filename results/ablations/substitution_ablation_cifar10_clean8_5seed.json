@@ -1,0 +1,217 @@
+{
+  "STATUS": "AGGREGATED -- COMPLETE",
+  "source_commit": "3abab42",
+  "pattern": "substitution_ablation_cifar10_clean8_seeds4?.json",
+  "source_files": [
+    "substitution_ablation_cifar10_clean8_seeds42.json",
+    "substitution_ablation_cifar10_clean8_seeds43.json",
+    "substitution_ablation_cifar10_clean8_seeds44.json",
+    "substitution_ablation_cifar10_clean8_seeds45.json",
+    "substitution_ablation_cifar10_clean8_seeds46.json"
+  ],
+  "seeds_from_partial_checkpoints": [],
+  "expected_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "missing_cells": [],
+  "metric": "test_at_best_val",
+  "summary": {
+    "Teacher": {
+      "metric": "test_at_best_val",
+      "n_seeds": 5,
+      "mean": 76.05799999999999,
+      "std": 1.0518174746599291,
+      "min": 74.51,
+      "max": 77.35,
+      "per_seed": {
+        "42": 76.57,
+        "43": 76.11,
+        "44": 75.75,
+        "45": 77.35,
+        "46": 74.51
+      }
+    },
+    "0: unchanged KD": {
+      "metric": "test_at_best_val",
+      "n_seeds": 5,
+      "mean": 76.77799999999999,
+      "std": 1.4147685323048456,
+      "min": 75.3,
+      "max": 78.23,
+      "per_seed": {
+        "42": 78.23,
+        "43": 77.0,
+        "44": 75.33,
+        "45": 78.03,
+        "46": 75.3
+      }
+    },
+    "A: GELU only": {
+      "metric": "test_at_best_val",
+      "n_seeds": 5,
+      "mean": 75.324,
+      "std": 1.6001968628890606,
+      "min": 72.51,
+      "max": 76.52,
+      "per_seed": {
+        "42": 75.82,
+        "43": 76.52,
+        "44": 75.98,
+        "45": 75.79,
+        "46": 72.51
+      }
+    },
+    "B: softmax only": {
+      "metric": "test_at_best_val",
+      "n_seeds": 5,
+      "mean": 68.764,
+      "std": 1.01888664727731,
+      "min": 67.53,
+      "max": 69.86,
+      "per_seed": {
+        "42": 68.56,
+        "43": 67.53,
+        "44": 68.12,
+        "45": 69.75,
+        "46": 69.86
+      }
+    },
+    "C: norm only": {
+      "metric": "test_at_best_val",
+      "n_seeds": 5,
+      "mean": 81.154,
+      "std": 0.44213120224656904,
+      "min": 80.72,
+      "max": 81.82,
+      "per_seed": {
+        "42": 81.35,
+        "43": 81.04,
+        "44": 80.84,
+        "45": 80.72,
+        "46": 81.82
+      }
+    },
+    "D: GELU+softmax": {
+      "metric": "test_at_best_val",
+      "n_seeds": 5,
+      "mean": 69.898,
+      "std": 1.9336804286127511,
+      "min": 68.23,
+      "max": 73.08,
+      "per_seed": {
+        "42": 68.72,
+        "43": 69.18,
+        "44": 68.23,
+        "45": 73.08,
+        "46": 70.28
+      }
+    },
+    "E: all three": {
+      "metric": "test_at_best_val",
+      "n_seeds": 5,
+      "mean": 29.042,
+      "std": 16.5768443921031,
+      "min": 10.52,
+      "max": 44.33,
+      "per_seed": {
+        "42": 44.33,
+        "43": 42.78,
+        "44": 35.59,
+        "45": 10.52,
+        "46": 11.99
+      }
+    },
+    "F: softmax+norm": {
+      "metric": "test_at_best_val",
+      "n_seeds": 5,
+      "mean": 42.812,
+      "std": 19.815605466399454,
+      "min": 10.75,
+      "max": 56.73,
+      "per_seed": {
+        "42": 53.69,
+        "43": 10.75,
+        "44": 36.34,
+        "45": 56.55,
+        "46": 56.73
+      }
+    },
+    "G: GELU+norm": {
+      "metric": "test_at_best_val",
+      "n_seeds": 5,
+      "mean": 79.408,
+      "std": 0.5360223875921556,
+      "min": 78.68,
+      "max": 80.1,
+      "per_seed": {
+        "42": 78.68,
+        "43": 79.62,
+        "44": 79.12,
+        "45": 79.52,
+        "46": 80.1
+      }
+    }
+  },
+  "tests_vs_teacher": {
+    "0: unchanged KD": {
+      "t": 0.9132394820506726,
+      "p": 0.38994903438945566,
+      "diff_pp": 0.7199999999999989,
+      "n_config": 5,
+      "n_teacher": 5
+    },
+    "A: GELU only": {
+      "t": -0.857094223157453,
+      "p": 0.4201106648171785,
+      "diff_pp": -0.7339999999999947,
+      "n_config": 5,
+      "n_teacher": 5
+    },
+    "B: softmax only": {
+      "t": -11.137630322701396,
+      "p": 3.8069511486796334e-06,
+      "diff_pp": -7.293999999999997,
+      "n_config": 5,
+      "n_teacher": 5
+    },
+    "C: norm only": {
+      "t": 9.987166446205539,
+      "p": 0.00011391289927726035,
+      "diff_pp": 5.096000000000004,
+      "n_config": 5,
+      "n_teacher": 5
+    },
+    "D: GELU+softmax": {
+      "t": -6.257474727211932,
+      "p": 0.0006908635853431446,
+      "diff_pp": -6.159999999999997,
+      "n_config": 5,
+      "n_teacher": 5
+    },
+    "E: all three": {
+      "t": -6.329309499044743,
+      "p": 0.0031039301630173175,
+      "diff_pp": -47.01599999999999,
+      "n_config": 5,
+      "n_teacher": 5
+    },
+    "F: softmax+norm": {
+      "t": -3.746330610653622,
+      "p": 0.019809605923039163,
+      "diff_pp": -33.245999999999995,
+      "n_config": 5,
+      "n_teacher": 5
+    },
+    "G: GELU+norm": {
+      "t": 6.3453343028423355,
+      "p": 0.0007433283246097306,
+      "diff_pp": 3.3500000000000085,
+      "n_config": 5,
+      "n_teacher": 5
+    }
+  }
+}

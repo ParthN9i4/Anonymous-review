@@ -1,0 +1,226 @@
+{
+  "STATUS": "RECOVERED FROM LOG -- PARTIAL",
+  "source_log": "slurm_logs/subst_cifar10_468.out",
+  "dataset": "cifar10",
+  "runs_recovered": 7,
+  "runs_incomplete_dropped": 1,
+  "missing_cells": [
+    "Teacher/seed43",
+    "Teacher/seed44",
+    "Teacher/seed45",
+    "Teacher/seed46",
+    "A: GELU only/seed43",
+    "A: GELU only/seed44",
+    "A: GELU only/seed45",
+    "A: GELU only/seed46",
+    "B: softmax only/seed43",
+    "B: softmax only/seed44",
+    "B: softmax only/seed45",
+    "B: softmax only/seed46",
+    "C: norm only/seed43",
+    "C: norm only/seed44",
+    "C: norm only/seed45",
+    "C: norm only/seed46",
+    "D: GELU+softmax/seed43",
+    "D: GELU+softmax/seed44",
+    "D: GELU+softmax/seed45",
+    "D: GELU+softmax/seed46",
+    "E: all three/seed43",
+    "E: all three/seed44",
+    "E: all three/seed45",
+    "E: all three/seed46",
+    "F: softmax+norm/seed43",
+    "F: softmax+norm/seed44",
+    "F: softmax+norm/seed45",
+    "F: softmax+norm/seed46"
+  ],
+  "teacher_per_seed": {
+    "42": {
+      "best_epoch": 91,
+      "test_at_best_val": 75.4,
+      "test_final": 75.38,
+      "best_val": 76.46
+    }
+  },
+  "with_kd_per_seed": {
+    "A: GELU only": {
+      "42": {
+        "best_epoch": 91,
+        "test_at_best_val": 76.76,
+        "test_final": 77.01,
+        "best_val": 77.18
+      }
+    },
+    "B: softmax only": {
+      "42": {
+        "best_epoch": 76,
+        "test_at_best_val": 67.25,
+        "test_final": 66.85,
+        "best_val": 68.4
+      }
+    },
+    "C: norm only": {
+      "42": {
+        "best_epoch": 98,
+        "test_at_best_val": 80.24,
+        "test_final": 80.43,
+        "best_val": 80.86
+      }
+    },
+    "D: GELU+softmax": {
+      "42": {
+        "best_epoch": 98,
+        "test_at_best_val": 67.49,
+        "test_final": 67.42,
+        "best_val": 67.88
+      }
+    },
+    "E: all three": {
+      "42": {
+        "best_epoch": 92,
+        "test_at_best_val": 21.54,
+        "test_final": 19.23,
+        "best_val": 21.84
+      }
+    },
+    "F: softmax+norm": {
+      "42": {
+        "best_epoch": 70,
+        "test_at_best_val": 32.95,
+        "test_final": 10.05,
+        "best_val": 31.74
+      }
+    }
+  },
+  "no_kd_per_seed": {},
+  "summary": {
+    "Teacher": {
+      "metric": "test_at_best_val",
+      "mean": 75.4,
+      "std": 0.0,
+      "min": 75.4,
+      "max": 75.4,
+      "per_seed": {
+        "42": 75.4
+      },
+      "n_seeds": 1,
+      "sensitivity_test_final": {
+        "mean": 75.38,
+        "std": 0.0,
+        "per_seed": {
+          "42": 75.38
+        }
+      }
+    },
+    "with_kd": {
+      "A: GELU only": {
+        "metric": "test_at_best_val",
+        "mean": 76.76,
+        "std": 0.0,
+        "min": 76.76,
+        "max": 76.76,
+        "per_seed": {
+          "42": 76.76
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 77.01,
+          "std": 0.0,
+          "per_seed": {
+            "42": 77.01
+          }
+        }
+      },
+      "B: softmax only": {
+        "metric": "test_at_best_val",
+        "mean": 67.25,
+        "std": 0.0,
+        "min": 67.25,
+        "max": 67.25,
+        "per_seed": {
+          "42": 67.25
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 66.85,
+          "std": 0.0,
+          "per_seed": {
+            "42": 66.85
+          }
+        }
+      },
+      "C: norm only": {
+        "metric": "test_at_best_val",
+        "mean": 80.24,
+        "std": 0.0,
+        "min": 80.24,
+        "max": 80.24,
+        "per_seed": {
+          "42": 80.24
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 80.43,
+          "std": 0.0,
+          "per_seed": {
+            "42": 80.43
+          }
+        }
+      },
+      "D: GELU+softmax": {
+        "metric": "test_at_best_val",
+        "mean": 67.49,
+        "std": 0.0,
+        "min": 67.49,
+        "max": 67.49,
+        "per_seed": {
+          "42": 67.49
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 67.42,
+          "std": 0.0,
+          "per_seed": {
+            "42": 67.42
+          }
+        }
+      },
+      "E: all three": {
+        "metric": "test_at_best_val",
+        "mean": 21.54,
+        "std": 0.0,
+        "min": 21.54,
+        "max": 21.54,
+        "per_seed": {
+          "42": 21.54
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 19.23,
+          "std": 0.0,
+          "per_seed": {
+            "42": 19.23
+          }
+        }
+      },
+      "F: softmax+norm": {
+        "metric": "test_at_best_val",
+        "mean": 32.95,
+        "std": 0.0,
+        "min": 32.95,
+        "max": 32.95,
+        "per_seed": {
+          "42": 32.95
+        },
+        "n_seeds": 1,
+        "sensitivity_test_final": {
+          "mean": 10.05,
+          "std": 0.0,
+          "per_seed": {
+            "42": 10.05
+          }
+        }
+      }
+    }
+  }
+}

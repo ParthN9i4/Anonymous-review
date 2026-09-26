@@ -1,0 +1,64 @@
+{
+  "configuration": "preserve_s43_budget_gelu_n2048",
+  "seed": 43,
+  "scope": "post hoc activation-density refit; fit and gate are training images; clean test is locked after baseline checks",
+  "fit_n_images": 2048,
+  "gate_n_images": 2048,
+  "test_n_images": 10000,
+  "fit_gate_overlap": 0,
+  "degree": 7,
+  "baseline": {
+    "reference_gate": {
+      "n": 2048,
+      "accuracy_percent": 98.193359375,
+      "invalid_images": 0
+    },
+    "frozen_gate": {
+      "n": 2048,
+      "accuracy_percent": 25.48828125,
+      "invalid_images": 0
+    },
+    "reference_test": {
+      "n": 10000,
+      "accuracy_percent": 86.33,
+      "invalid_images": 0
+    },
+    "frozen_test": {
+      "n": 10000,
+      "accuracy_percent": 25.55,
+      "invalid_images": 0
+    }
+  },
+  "refit": {
+    "block0_gate": {
+      "n": 2048,
+      "accuracy_percent": 86.376953125,
+      "invalid_images": 0
+    },
+    "block0_test": {
+      "n": 10000,
+      "accuracy_percent": 79.16,
+      "invalid_images": 0
+    },
+    "all_blocks_gate": {
+      "n": 2048,
+      "accuracy_percent": 95.361328125,
+      "invalid_images": 0
+    },
+    "all_blocks_test": {
+      "n": 10000,
+      "accuracy_percent": 83.75,
+      "invalid_images": 0
+    }
+  },
+  "refit_layers": [
+    "blocks.0.act",
+    "blocks.1.act",
+    "blocks.2.act",
+    "blocks.3.act",
+    "blocks.4.act",
+    "blocks.5.act"
+  ],
+  "elapsed_seconds": 8.423141956329346,
+  "weights_preserved": true
+}

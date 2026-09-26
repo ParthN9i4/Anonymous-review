@@ -1,0 +1,20 @@
+{
+  "planned": {
+    "conversion": 26,
+    "endpoints": 15,
+    "fhe": 12
+  },
+  "recorded": {
+    "conversion": 26,
+    "endpoints": 15,
+    "fhe": 12
+  },
+  "gaps": [],
+  "ckks_record_statuses": {
+    "MEASURED": 126,
+    "INVALID_PLAINTEXT_INPUT_OR_TARGET": 9
+  },
+  "full_encrypted_backbone": false,
+  "bootstrapping": false,
+  "independent_external_dataset": false
+}

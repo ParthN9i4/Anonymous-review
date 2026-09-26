@@ -1,0 +1,99 @@
+{
+  "purpose": "measure poly-GELU, poly-attention and Goldschmidt division inside real CKKS ciphertexts on this model's own activations (audit gap 1; gap 2's remaining half)",
+  "weights": "RANDOM INIT (no local checkpoint) -- numerical fidelity and level consumption only, not accuracy",
+  "ckks": {
+    "N": 32768,
+    "scale_bits": 40,
+    "max_levels_at_N_2_15": 19,
+    "security": "128-bit (TenSEAL/SEAL default enforced)"
+  },
+  "results": {
+    "polygelu": {
+      "max": 2.1791568207696344e-06,
+      "mean": 3.6822046621401774e-07,
+      "rel_max": 3.923100483478045e-05,
+      "depth_levels": 2,
+      "n": 100,
+      "ms_per_value": 0.8568596839904785,
+      "coeffs": [
+        0.17404785752296448,
+        0.49999991059303284,
+        0.14491796493530273
+      ],
+      "input_range": [
+        -1.4918566942214966,
+        1.2243191003799438
+      ]
+    },
+    "evenpower_attn": {
+      "max": 2.263187227180552e-06,
+      "mean": 9.092189855458566e-07,
+      "rel_max": 3.949670341083635e-06,
+      "depth_levels": 2,
+      "n": 100,
+      "ms_per_value": 0.6674027442932129,
+      "input_range": [
+        -1.1796226501464844,
+        0.9592617750167847
+      ]
+    },
+    "goldschmidt": {
+      "scale": 0.02069972466643543,
+      "sweep": [
+        {
+          "iters": 1,
+          "depth_levels": 3,
+          "max": 0.2638419103456376,
+          "mean": 0.016187527315824384,
+          "rel_max": 0.7774469418490103,
+          "ms_per_value": 1.1051552636282784
+        },
+        {
+          "iters": 2,
+          "depth_levels": 5,
+          "max": 0.20512125849224128,
+          "mean": 0.006301841298427612,
+          "rel_max": 0.6044183614123458,
+          "ms_per_value": 2.266682897295271
+        },
+        {
+          "iters": 3,
+          "depth_levels": 7,
+          "max": 0.12397373828833541,
+          "mean": 0.001991857675013741,
+          "rel_max": 0.36530588933195823,
+          "ms_per_value": 3.5303286143711636
+        },
+        {
+          "iters": 4,
+          "depth_levels": 9,
+          "max": 0.0452748818513678,
+          "mean": 0.0004915021626175246,
+          "rel_max": 0.13340874613820858,
+          "ms_per_value": 6.437505994524274
+        },
+        {
+          "iters": 5,
+          "depth_levels": 11,
+          "max": 0.006014267378575411,
+          "mean": 5.284480459971543e-05,
+          "rel_max": 0.0177218766147136,
+          "ms_per_value": 10.486207689557757
+        },
+        {
+          "iters": 6,
+          "depth_levels": 13,
+          "max": 7.128409045470407e-05,
+          "mean": 3.898097972424044e-06,
+          "rel_max": 0.00021004850235467615,
+          "ms_per_value": 15.631585461752755
+        }
+      ],
+      "row_sum_range": [
+        2.9466392993927,
+        46.00935363769531
+      ],
+      "n": 140
+    }
+  }
+}
